@@ -39,7 +39,7 @@ const RoomFilter = ({ rooms }) => {
 
   return (
       <section className="filter-container">
-        <Title title="search rooms" />
+        <Title title="Szobák keresése" />
 
         <form className="filter-form">
           <div className="form-group">
