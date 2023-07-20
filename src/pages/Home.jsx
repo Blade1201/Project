@@ -9,13 +9,10 @@ const Home = () => {
   return (
     <>
       <Hero>
-        <Banner
-          title="Szobák"
-          subtitle="Már 3000 Ft./éjszakától"
-        >
-          <Link to="/rooms" className="btn-primary">
-            Szobáink
-          </Link>
+        <Banner title="Szobák" subtitle="Már 3000 Ft./éjszakától">
+
+          <Link to="/rooms" className="btn-primary"> Szobáink </Link>
+
         </Banner>
       </Hero>
       <Services />

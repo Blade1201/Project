@@ -13,11 +13,11 @@ const Room = ({ room }) => {
 
         <div className="price-top">
           <h6>$ {price}</h6>
-          <p>per night</p>
+          <p>Éjszakánként</p>
         </div>
 
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          Feature
+          Kiemelt
         </Link>
       </div>
       <p className="room-info">{name}</p>

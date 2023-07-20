@@ -43,7 +43,7 @@ const RoomFilter = ({ rooms }) => {
 
         <form className="filter-form">
           <div className="form-group">
-            <label htmlFor="type">rooms type</label>
+            <label htmlFor="type">Szoba típusa</label>
             <select
                 name="type"
                 id="type"
@@ -56,7 +56,7 @@ const RoomFilter = ({ rooms }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="capacity">guests</label>
+            <label htmlFor="capacity">Vendégek száma</label>
             <select
                 name="capacity"
                 id="capacity"
@@ -69,7 +69,7 @@ const RoomFilter = ({ rooms }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="price">room price ${price}</label>
+            <label htmlFor="price">Szoba Ára ${price}</label>
             <input
                 type="range"
                 name="price"
@@ -83,7 +83,7 @@ const RoomFilter = ({ rooms }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="size">room size</label>
+            <label htmlFor="size">Szoba mérete</label>
             <div className="size-inputs">
               <input
                   type="number"
@@ -113,7 +113,7 @@ const RoomFilter = ({ rooms }) => {
                   checked={breakfast}
                   onChange={handleChange}
               />
-              <label htmlFor="breakfast">breakfast</label>
+              <label htmlFor="breakfast">Reggeli</label>
             </div>
 
             <div className="single-extra">
@@ -124,7 +124,7 @@ const RoomFilter = ({ rooms }) => {
                   checked={pets}
                   onChange={handleChange}
               />
-              <label htmlFor="pets">pets</label>
+              <label htmlFor="pets">Állatok</label>
             </div>
           </div>
         </form>

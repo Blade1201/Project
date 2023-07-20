@@ -6,25 +6,25 @@ const Services = () => {
   const services = [
     {
       icon: <FaCocktail />,
-      title: "free cocktails",
+      title: "Koktélok",
       info:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
     },
     {
       icon: <FaHiking />,
-      title: "endless hiking",
+      title: "Biciklizés",
       info:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
     },
     {
       icon: <FaShuttleVan />,
-      title: "free shuttle",
+      title: "Ingyenes szállitás",
       info:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
     },
     {
       icon: <FaBeer />,
-      title: "storages beer",
+      title: "Sörözés",
       info:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
     },
@@ -32,7 +32,7 @@ const Services = () => {
 
   return (
     <section className="services">
-      <Title title="services" />
+      <Title title="Szolgáltatások" />
 
       <div className="services-center">
         {services.map((item, index) => {

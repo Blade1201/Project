@@ -8,13 +8,6 @@ const Footer = () => {
       <h2>Hopstop</h2>
       <p>
         &copy; <span>{year}</span> Minden jog fenntartva.
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.facebook.com/fsdfs"
-        >
-          asfasf
-        </a>
       </p>
     </footer>
   );

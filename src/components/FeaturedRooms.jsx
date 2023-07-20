@@ -14,7 +14,7 @@ const FeaturedRooms = () => {
 
     return (
         <section className="featured-rooms">
-            <Title title="featured rooms" />
+            <Title title="Kiemelt szobák" />
 
             <div className="featured-rooms-center">
                 {loading ? <Loading /> : roomComponents}

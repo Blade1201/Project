@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaAlignRight } from 'react-icons/fa';
-import Logo from '../images/svg/logo.svg';
+import Logo from '../images/logo/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +14,10 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          {/* app logo */}
-          <Link to="/">
-            <img src={Logo} alt="Reach Resort" />
-          </Link>
 
-          {/* navbar toggle button */}
+          <Link to="/"> <img src={Logo} alt="Hopstop" /></Link>
+
+
           <button
             type="button"
             className="nav-btn"
@@ -28,15 +26,15 @@ const Navbar = () => {
             <FaAlignRight className="nav-icon" />
           </button>
         </div>
-        {/* navbar link */}
-        <ul
-          className={isOpen ? "nav-links show-nav" : "nav-links"}
-        >
+
+
+        <ul className={isOpen ? "nav-links show-nav" : "nav-links"}>
+
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Kezdőlap</Link>
           </li>
           <li>
-            <Link to="/rooms">Rooms</Link>
+            <Link to="/rooms">Szobák</Link>
           </li>
         </ul>
       </div>

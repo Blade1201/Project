@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/style.css";
-import {Routes, Route, BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Room from "./pages/Room";
 import SingleRoom from "./pages/SingleRoom";
@@ -12,9 +12,8 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-    <Navbar />
 
-    <BrowserRouter>
+    <Navbar />
 
     <Routes>
 
@@ -25,9 +24,8 @@ const App = () => {
     
     </Routes>
 
-    </BrowserRouter>
-
     <Footer />
+
   </>
   );
 }
