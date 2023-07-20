@@ -1,12 +1,11 @@
 import React, {useContext} from 'react';
-import { Link } from 'react-router-dom';
+import {Link, useParams} from 'react-router-dom';
 import {RoomContext} from '../context/Context';
-import defaultBcg from '../images/jpeg/room-1.jpeg';
-import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
+import Hero from "../components/Hero";
 
-const SingleRoom = ({ match }) => {
-  const { params: { slug } } = match;
+const SingleRoom = () => {
+  const { slug } = useParams();
 
   const context = useContext(RoomContext);
   const { getRoom } = context;
@@ -35,21 +34,20 @@ const SingleRoom = ({ match }) => {
     images,
   } = room;
 
-  const [mainImg, ...defaultImg] = images;
 
   return (
       <>
-        <StyledHero img={mainImg || defaultBcg}>
+        <Hero>
           <Banner title={`${name} room`}>
             <Link to="/rooms" className="btn-primary">
               Vissza a szobákhoz
             </Link>
           </Banner>
-        </StyledHero>
+        </Hero>
 
         <section className="single-room">
           <div className="single-room-images">
-            {defaultImg.map((item, index) => (
+            {images.map((item, index) => (
                 <img key={index} src={item} alt={name} />
             ))}
           </div>
