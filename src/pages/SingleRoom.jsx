@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {Link, useParams} from 'react-router-dom';
 import {RoomContext} from '../context/Context';
 import Banner from '../components/Banner';
@@ -10,6 +10,10 @@ const SingleRoom = () => {
   const context = useContext(RoomContext);
   const { getRoom } = context;
   const room = getRoom(slug);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!room) {
     return (
@@ -38,7 +42,7 @@ const SingleRoom = () => {
   return (
       <>
         <Hero>
-          <Banner title={`${name} room`}>
+          <Banner title={`${name} Szoba`}>
             <Link to="/rooms" className="btn-primary">
               Vissza a szobákhoz
             </Link>
@@ -60,11 +64,10 @@ const SingleRoom = () => {
 
             <article className="info">
               <h3>Információ:</h3>
-              <h6>Ár : ${price}</h6>
-              <h6>Méret : {size} SQFT</h6>
+              <h6>Ár : {price} Ft./Éjszaka</h6>
+              <h6>Méret : {size}m<sup>2</sup></h6>
               <h6>
-                Maximális létszáma :{' '}
-                {capacity > 1 ? `${capacity} people` : `${capacity} person`}
+                Maximális létszám : {capacity} személy
               </h6>
               <h6>{pets ? 'Állatok engedélyezve' : 'Állatok nincsenek engedélyezve'}</h6>
               <h6>{breakfast && 'Nincs reggeli'}</h6>

@@ -69,7 +69,7 @@ const RoomFilter = ({ rooms }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="price">Szoba Ára ${price}</label>
+            <label htmlFor="price">Szoba Ára {price} Ft.</label>
             <input
                 type="range"
                 name="price"
@@ -83,13 +83,14 @@ const RoomFilter = ({ rooms }) => {
           </div>
 
           <div className="form-group">
-            <label htmlFor="size">Szoba mérete</label>
+            <label htmlFor="size">Szoba mérete<sup><small>(m<sup>2</sup>)</small></sup></label>
             <div className="size-inputs">
               <input
                   type="number"
                   name="minSize"
                   id="size"
                   value={minSize}
+                  step={10}
                   onChange={handleChange}
                   className="size-input"
               />
@@ -97,6 +98,7 @@ const RoomFilter = ({ rooms }) => {
                   type="number"
                   name="maxSize"
                   id="size"
+                  step={10}
                   value={maxSize}
                   onChange={handleChange}
                   className="size-input"

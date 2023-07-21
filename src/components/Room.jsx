@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import defaultImg from "../images/jpeg/room-1.jpeg";
-import PropTypes from "prop-types";
 
 const Room = ({ room }) => {
   const { name, slug, images, price } = room;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <article className="room">
@@ -12,7 +15,7 @@ const Room = ({ room }) => {
         <img src={images[0] || defaultImg} alt="single room" />
 
         <div className="price-top">
-          <h6>$ {price}</h6>
+          <h6>{price} Ft./</h6>
           <p>Éjszakánként</p>
         </div>
 
@@ -24,14 +27,5 @@ const Room = ({ room }) => {
     </article>
   );
 }
-
-Room.prototype = {
-  room: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
-    images: PropTypes.arrayOf(PropTypes.string).isRequired,
-    price: PropTypes.number.isRequired,
-  }),
-};
 
 export default Room;
