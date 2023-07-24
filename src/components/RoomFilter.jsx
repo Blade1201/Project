@@ -23,7 +23,7 @@ const RoomFilter = ({ rooms }) => {
   } = context;
 
   let types = getUnique(rooms, "type");
-  types = ["all", ...types];
+  types = ["Összes", ...types];
   types = types.map((item, index) => (
       <option value={item} key={index}>
         {item}

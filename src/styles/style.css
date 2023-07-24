@@ -157,7 +157,7 @@
   /* end of navbar */
   /* Hero */
   .defaultHero{
-    min-height: calc(100vh - 66px);
+    min-height: 60vh;
     background: url("../images/skyline.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;

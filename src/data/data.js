@@ -28,15 +28,11 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, 60 m2 alapterületű egyágyas szoba 1 fő részére. A fürdőszobában ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár is a vendégek rendelkezésére áll.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
       ],
       images: [
         {
@@ -64,15 +60,12 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Minden igényt kielégítő 80 m2-es beltér, franciaággyal. A szobában minibár található. A fürdőszobában kényelmes ülőkád található.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -100,15 +93,14 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 100 m2 alapterületű franciaágyas szoba 1 fő részére. A fürdőszobában ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár és LCD TV is a vendégek rendelkezésére áll.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -136,15 +128,17 @@ const data = [
       breakfast: true,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 120 m2 alapterületű franciaágyas szoba 1 fő részére. A fürdőszobában ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár és LCD TV is a vendégek rendelkezésére áll.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "pH-kiegyensúlyozott piperecikkek",
+        "Ingyenes frissítők",
+        "Megfelelő biztonság/biztonság",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -172,15 +166,11 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Minden igényt kielégítő 70 m2-es beltér, két különálló ággyal. A fürdőszobában kényelmes ülőkád található.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
       ],
       images: [
         {
@@ -208,15 +198,12 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Minden igényt kielégítő 80 m2-es beltér, franciaággyal. A szobában minibár és LCD Tv áll a vendégek rendelkezésére. A fürdőszobában kényelmes ülőkád található.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -244,15 +231,14 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 100 m2 alapterületű franciaágyas szoba 2 fő részére. A fürdőszobában ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár is a vendégek rendelkezésére áll.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -280,15 +266,17 @@ const data = [
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 130 m2 alapterületű franciaágyas szoba 2 fő részére. A fürdőszobában ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár is a vendégek rendelkezésére áll.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "pH-kiegyensúlyozott piperecikkek",
+        "Ingyenes frissítők",
+        "Megfelelő biztonság/biztonság",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -316,15 +304,11 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 80 m2 alapterületű kétágyas szoba egy franciaággyal és egy külön ággyal 3 fő részére. A fürdőszobában kényelmes ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
       ],
       images: [
         {
@@ -352,15 +336,12 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 100 m2 alapterületű kétágyas szoba egy franciaággyal és egy külön ággyal 4 fő részére. A fürdőszobában kényelmes ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár is a vendégek rendelkezésére áll.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -388,15 +369,14 @@ const data = [
       breakfast: false,
       featured: false,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Kényelmes, tágas, 130 m2 alapterületű kétágyas szoba egy franciaággyal és egy külön ággyal 5 fő részére. A fürdőszobában kényelmes ülőkád található. A szoba ablakaiból a csodálatos nyíregyházi belváros látható. A szobában minibár és LCD Tv áll a vendégek rendelkezésére.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -424,15 +404,17 @@ const data = [
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Két helyiségből álló családi szobánkat a családos vendégeink igényei szerint alakítottuk ki. Tágas 160 m2-es beltér, négy ággyal. A szobában minibár áll a vendégek rendelkezésére. A fürdőszobában kényelmes ülőkád található.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "pH-kiegyensúlyozott piperecikkek",
+        "Ingyenes frissítők",
+        "Megfelelő biztonság/biztonság",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {
@@ -460,15 +442,17 @@ const data = [
       breakfast: true,
       featured: true,
       description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
+        "Elegáns stílusú, két helyiségből álló elnöki szobánkat különleges alkalmakhoz alakítottuk ki. A hálószobában franciaágy, a nappaliban két egyszemélyes ágy (+2 fő részére), és LCD TV. A szobában minibár áll a vendégek rendelkezésére. A fürdőszobában kényelmes ülőkád valamint kétszemélyes mosdók találhatóak. Az ablakokból a nyíregyházi Kossuth tér panorámájában gyönyörködhet.",
       extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds",
+        "pH-kiegyensúlyozott piperecikkek",
+        "Ingyenes frissítők",
+        "Megfelelő biztonság/biztonság",
+        "Plüss párnák és légáteresztő ágyneműk",
+        "Puha, túlméretezett fürdőlepedők",
+        "Törölköző",
+        "Hajszárító",
+        "Wi-fi",
+        "Kényelmes ágyak",
       ],
       images: [
         {

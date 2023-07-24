@@ -8,7 +8,7 @@ const RoomProvider = (props) => {
     const [sortedRooms, setSortedRooms] = useState([]);
     const [featuredRooms, setFeaturedRooms] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [type, setType] = useState("all");
+    const [type, setType] = useState("Összes");
     const [capacity, setCapacity] = useState(1);
     const [price, setPrice] = useState(0);
     const [minPrice, setMinPrice] = useState(0);
@@ -93,7 +93,7 @@ const RoomProvider = (props) => {
         let tempRooms = [...rooms];
 
         // filter by type
-        if (type !== "all") {
+        if (type !== "Összes") {
             tempRooms = tempRooms.filter((room) => room.type === type);
         }
 

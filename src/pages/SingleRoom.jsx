@@ -66,7 +66,7 @@ const SingleRoom = () => {
                 Maximális létszám : {capacity} személy
               </h6>
               <h6>{pets ? 'Állatok engedélyezve' : 'Állatok nincsenek engedélyezve'}</h6>
-              <h6>{breakfast && 'Nincs reggeli'}</h6>
+              <h6>{breakfast ? 'Reggeli' : "Nincs reggeli"}</h6>
             </article>
           </div>
         </section>
