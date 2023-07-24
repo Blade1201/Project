@@ -352,6 +352,7 @@
     text-align: center;
     font-weight: 700;
     letter-spacing: var(--mainSpacing);
+    color: var(--mainWhite);
   }
   /* end of room  */
   /* single room*/
@@ -497,26 +498,59 @@
   /* end of rooms filter */
   
   /* footer style */
-  .footer {
+  footer {
+    width: 100%;
+    background-color: #918b76;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: #222;
+    font-size: 13px;
+    margin-top: 60px;
+    opacity: 0.8;
+    position: absolute;
+    padding: 1.3rem;
+    border: 10px double beige;
+}
+
+hr {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-title {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.footer-contact li {
+    list-style-type: none;
+    padding: 6px 0px;
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.333333%;
+    float: left;
   }
-  .footer h2,
-  p {
-    color: white;
+}
+
+@media (max-width: 767px) {
+  .col-xs-6 {
+    width: 50%;
+    float: left;
   }
-  .footer a {
-    color: white;
+}
+
+.information {
+    font-size: 17px;
+    color: black;
     text-decoration: none;
-  }
-  .footer a:hover {
-    color: red;
-    text-decoration: underline;
-    transition: var(--mainTransition);
-    -webkit-transition: var(--mainTransition);
-    -moz-transition: var(--mainTransition);
-    -ms-transition: var(--mainTransition);
-    -o-transition: var(--mainTransition);
-  }  
+}
+
+.information p {
+  padding: 5px 0px;
+}
+
+.information:hover {
+    color: white;
+}

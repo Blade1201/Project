@@ -27,7 +27,7 @@ const Services = () => {
       icon: <FaBeer />,
       title: "Alkohol fogyasztás",
       info:
-        "Felnőtt érdeklődőink válogathatnak széles választékú katalógusunkban.",
+        "Felnőtt érdeklődőink válogathatnak széles választékú katalógusainkban.",
     },
   ];
 
