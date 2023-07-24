@@ -1,32 +1,33 @@
 import React from 'react';
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import { FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
+import { BiRestaurant } from 'react-icons/bi';
 import Title from './Title';
 
 const Services = () => {
   const services = [
     {
-      icon: <FaCocktail />,
-      title: "Koktélozás",
+      icon: <BiRestaurant />,
+      title: "Étterem",
       info:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
+        "Ismerje meg séfeink ízléses mesevilágát.",
     },
     {
       icon: <FaHiking />,
-      title: "Kerékpározás",
+      title: "Túrázás",
       info:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
+        "Vendégeink kedvezményesen látogathatják városunk látványosságait.",
     },
     {
       icon: <FaShuttleVan />,
-      title: "Ingyenes szállítás",
+      title: "Ingyenes parkolás",
       info:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
+        "Hotelünk területén a vendégek ingyenes parkolási lehetőséggel élhetnek.",
     },
     {
       icon: <FaBeer />,
       title: "Alkohol fogyasztás",
       info:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est eaque error provident unde eligendi.",
+        "Felnőtt érdeklődőink válogathatnak széles választékú katalógusunkban.",
     },
   ];
 
