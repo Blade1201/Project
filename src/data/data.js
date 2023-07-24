@@ -1,19 +1,16 @@
-import room1 from "../images/jpeg/details-1.jpeg";
-import room2 from "../images/jpeg/details-2.jpeg";
-import room3 from "../images/jpeg/details-3.jpeg";
-import room4 from "../images/jpeg/details-4.jpeg";
-import img1 from "../images/jpeg/room-1.jpeg";
-import img2 from "../images/jpeg/room-2.jpeg";
-import img3 from "../images/jpeg/room-3.jpeg";
-import img4 from "../images/jpeg/room-4.jpeg";
-import img5 from "../images/jpeg/room-5.jpeg";
-import img6 from "../images/jpeg/room-6.jpeg";
-import img7 from "../images/jpeg/room-7.jpeg";
-import img8 from "../images/jpeg/room-8.jpeg";
-import img9 from "../images/jpeg/room-9.jpeg";
-import img10 from "../images/jpeg/room-10.jpeg";
-import img11 from "../images/jpeg/room-11.jpeg";
-import img12 from "../images/jpeg/room-12.jpeg";
+import Single_standard from "../images/rooms/single-standard.jpeg";
+import Single_superior from "../images/rooms/single-superior.jpeg";
+import Single_deluxe from "../images/rooms/single-deluxe.jpeg";
+import Single_apartment from "../images/rooms/single-apartment.png";
+import Double_standard from "../images/rooms/double-standard.jpeg";
+import Double_superior from "../images/rooms/double-superior.jpeg";
+import Double_deluxe from "../images/rooms/double-deluxe.jpeg";
+import Double_apartment from "../images/rooms/double-apartment.jpeg";
+import Family_standard from "../images/rooms/family-standard.jpeg";
+import Family_superior from "../images/rooms/family-superior.jpeg";
+import Family_deluxe from "../images/rooms/family-deluxe.jpg";
+import Family_apartment from "../images/rooms/family-apartment.jpeg";
+import Presidential from "../images/rooms/presidential.jpeg";
 
 const data = [
   {
@@ -45,28 +42,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img1,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Single_standard,
             },
           },
         },
@@ -102,28 +78,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Single_superior,
             },
           },
         },
@@ -159,28 +114,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Single_deluxe,
             },
           },
         },
@@ -216,28 +150,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img4,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Single_apartment,
             },
           },
         },
@@ -273,28 +186,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img5,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Double_standard,
             },
           },
         },
@@ -330,28 +222,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img6,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Double_superior,
             },
           },
         },
@@ -387,28 +258,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img7,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Double_deluxe,
             },
           },
         },
@@ -444,28 +294,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img8,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Double_apartment,
             },
           },
         },
@@ -501,28 +330,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img9,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Family_standard,
             },
           },
         },
@@ -558,28 +366,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img10,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Family_superior,
             },
           },
         },
@@ -615,28 +402,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img11,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Family_deluxe,
             },
           },
         },
@@ -672,28 +438,7 @@ const data = [
         {
           fields: {
             file: {
-              url: img12,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Family_apartment,
             },
           },
         },
@@ -729,28 +474,7 @@ const data = [
         {
           fields: {
             file: {
-              url: room1,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room2,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room3,
-            },
-          },
-        },
-        {
-          fields: {
-            file: {
-              url: room4,
+              url: Presidential,
             },
           },
         },

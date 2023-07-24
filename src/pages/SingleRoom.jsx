@@ -2,7 +2,7 @@ import React, {useContext, useEffect} from 'react';
 import {Link, useParams} from 'react-router-dom';
 import {RoomContext} from '../context/Context';
 import Banner from '../components/Banner';
-import Hero from "../components/Hero";
+import RoomHero from "../components/RoomHero";
 
 const SingleRoom = () => {
   const { slug } = useParams();
@@ -38,23 +38,19 @@ const SingleRoom = () => {
     images,
   } = room;
 
-
   return (
       <>
-        <Hero>
-          <Banner title={`${name} Szoba`}>
-            <Link to="/rooms" className="btn-primary">
-              Vissza a szobákhoz
-            </Link>
-          </Banner>
-        </Hero>
+        {images.map((item) => (
+          <RoomHero item={item}>
+            <Banner title={`${name} Szoba`}>
+              <Link to="/rooms" className="btn-primary">
+                  Vissza a szobákhoz
+              </Link>
+            </Banner>
+          </RoomHero>
+            ))}
 
         <section className="single-room">
-          <div className="single-room-images">
-            {images.map((item, index) => (
-                <img key={index} src={item} alt={name} />
-            ))}
-          </div>
 
           <div className="single-room-info">
             <article className="desc">
