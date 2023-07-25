@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import Hero from './Hero';
 import Banner from './Banner';
+import Title from './Title';
 import AttractionsItem from './AttractionsItem';
 import kep1 from "../images/attractions/lido.jpg"
 import kep2 from "../images/attractions/lido2.jpg"
@@ -38,6 +39,7 @@ const Attractions = () => {
     },
   ];
 
+
   return (
     <>
      <Hero>
@@ -50,14 +52,14 @@ const Attractions = () => {
         <div className="attractions">
           <div className="subtitle">
             {latnivaloData.map((data, index) => (
-              <div key={index}>
-                <h3 style={{marginTop: "5rem"}}>
+              <div key={index} style={{display: "flex", alignItems: "center", marginLeft: index === 1 ? "0.3rem" : index === 2 ? "0.2rem" : "0", marginTop: index === 0 ? "5rem" : "1.8rem"}}>
+                <h1 style={{marginTop: "5rem", width: "250px"}}>
                   <a href={data.link} target="_blank" rel="noreferrer">
-                    {data.place}
+                  <Title title={data.place}/>
                   </a>
-                </h3>
+                </h1>
                 <AttractionsItem interval={5000} images={data.pics} />
-                <p style={{ marginTop: 20 }}>{data.content}</p>
+                <p style={{ marginTop: 20, width: "70rem", fontSize: "19px"}}>{data.content}</p>
               </div>
             ))}
           </div>
