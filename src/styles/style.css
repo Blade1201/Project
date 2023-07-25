@@ -212,6 +212,7 @@
     letter-spacing: var(--mainSpacing);
     text-transform: capitalize;
     margin-bottom: 1rem;
+    margin-top: 0.6rem;
   }
   .section-title div {
     width: 5rem;
@@ -249,13 +250,13 @@
   }
   .services p {
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
     color: var(--mainBlack);
   }
   @media screen and (min-width: 992px) {
     .services-center {
       width: 95vw;
-      max-width: 1170px;
+      max-width: 1475px;
     }
   }
   
@@ -507,7 +508,7 @@
     opacity: 0.8;
     position: absolute;
     padding: 1.3rem;
-    border: 10px double beige;
+    border: 11px double #434A42;
 }
 
 hr {
@@ -531,6 +532,7 @@ hr {
   .col-md-4 {
     width: 33.333333%;
     float: left;
+    margin-top: 10px;
   }
 }
 
@@ -553,4 +555,48 @@ hr {
 
 .information:hover {
     color: white;
+}
+
+.guest-review {
+  text-align: justify;
+  border: 7px double #434A42;
+  background-color: cornsilk;
+}
+
+.column-guest {
+  margin: 50px 20px;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-guest h3 {
+  text-transform: capitalize;
+  padding-bottom: 50px;
+
+}
+
+.content {
+  font-size: 18px;
+}
+
+.person {
+  font-style: italic;
+  font-weight: bold;
+  padding-bottom: 3rem;
+}
+
+.gallery {
+  margin: 20px 50px;
+  padding-top: 50px;
+}
+
+.gallery-item img {
+  border-radius: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+  width: 200px;
 }

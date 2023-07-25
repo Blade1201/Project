@@ -49,7 +49,7 @@ const Footer = () => {
                     <div className="col-md-4 col-xs-6">
                             <h3 className="footer-title">Hopstop hotel Nyíregyháza</h3>
                             <hr />
-                            <img src={Debit_Card} alt="Szépkártya" style={{ maxWidth: "60%", height: "auto", paddingTop: "1rem" }} />
+                            <img src={Debit_Card} alt="szepkartya" style={{ maxWidth: "60%", height: "auto", paddingTop: "1rem" }} />
                     </div>
                     <p style={{color: "white", paddingTop: "15rem"}}> &copy; {year} Minden jog fenntartva.</p>
     </footer>

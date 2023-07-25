@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
-import { BiRestaurant } from 'react-icons/bi';
+import { FaHiking, FaShuttleVan, FaBeer} from 'react-icons/fa';
+import { BiRestaurant, BiSolidSpa } from 'react-icons/bi';
 import Title from './Title';
 
 const Services = () => {
@@ -16,6 +16,12 @@ const Services = () => {
       title: "Túrázás",
       info:
         "Vendégeink kedvezményesen látogathatják városunk látványosságait.",
+    },
+    {
+      icon: <BiSolidSpa />,
+      title: "Wellness",
+      info:
+        "Wellness részlegünkben különleges hangulatfények és modern hangtechnika segíti elő a tökéletes pihenést, relaxációt.",
     },
     {
       icon: <FaShuttleVan />,

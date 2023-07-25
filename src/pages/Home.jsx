@@ -4,6 +4,8 @@ import Banner from "../components/Banner";
 import FeaturedRooms from "../components/FeaturedRooms";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import GuestReview from "../components/GuestReview";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
 
@@ -27,6 +29,8 @@ const Home = () => {
       </Hero>
       <Services />
       <FeaturedRooms />
+      <GuestReview />
+      <Gallery />
     </>
   );
 }
