@@ -16,14 +16,7 @@ const AttractionsItem = ({ interval, images }) => {
     const goToSlide = (index) => {
       setActiveIndex(index);
     };
-  
-    const goToPrevSlide = () => {
-      setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-    };
-  
-    const goToNextSlide = () => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
+
 
   return (
     <div className="carousel">
@@ -37,10 +30,8 @@ const AttractionsItem = ({ interval, images }) => {
           </div>
         ))}
       </div>
+      
       <div className="carousel-controls">
-        <button className="carousel-control-prev" onClick={goToPrevSlide}>
-          &lt;
-        </button>
         <div className="carousel-indicators">
           {images.map((src, index) => (
             <button
@@ -52,9 +43,6 @@ const AttractionsItem = ({ interval, images }) => {
             />
           ))}
         </div>
-        <button className="carousel-control-next" onClick={goToNextSlide}>
-          &gt;
-        </button>
       </div>
     </div>
   );

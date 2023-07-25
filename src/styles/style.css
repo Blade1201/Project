@@ -601,6 +601,24 @@ hr {
   width: 200px;
 }
 
+.attractions {
+  padding: 0px 50px;
+}
+
+.subtitle a {
+  text-decoration: none;
+  color: #434A42;
+}
+
+.subtitle {
+  text-align: justify;
+  text-align: center;
+}
+
+.subtitle img {
+  border: 7px double #434A42;
+  border-radius: 5px;
+}
 
 .carousel {
   position: relative;
@@ -658,30 +676,6 @@ hr {
   width: 97%;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: translateY(-350%);
-  color: #fff;
-  text-align: center;
-  line-height: 50px;
-  font-size: 20px;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.carousel-control-prev {
-  order: 1;
-}
-
-.carousel-control-next {
-  order: 3;
-}
-
 .carousel-indicators {
   display: flex;
   list-style: none;
@@ -696,8 +690,8 @@ hr {
 }
 
 .carousel-indicator {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
@@ -708,34 +702,4 @@ hr {
 
 .carousel-indicator.active {
   background-color: #fff;
-}
-
-
-.carousel-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-}
-
-.attractions {
-  padding: 0px 50px;
-}
-
-.subtitle a {
-  text-decoration: none;
-  color: #434A42;
-}
-
-.subtitle {
-  text-align: justify;
-  text-align: center;
-}
-
-.subtitle img {
-  border: 7px double #434A42;
-  border-radius: 5px;
 }
