@@ -600,3 +600,142 @@ hr {
   text-align: center;
   width: 200px;
 }
+
+
+.carousel {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.carousel-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0;
+}
+
+
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.carousel-item.active {
+  animation: slide 1s ease-in-out;
+}
+
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 97%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(-350%);
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.carousel-control-prev {
+  order: 1;
+}
+
+.carousel-control-next {
+  order: 3;
+}
+
+.carousel-indicators {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin: 0 5px;
+  border: none;
+  outline: none;
+}
+
+.carousel-indicator.active {
+  background-color: #fff;
+}
+
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.attractions {
+  padding: 0px 50px;
+}
+
+.subtitle a {
+  text-decoration: none;
+  color: #434A42;
+}
+
+.subtitle {
+  text-align: justify;
+  text-align: center;
+}
+
+.subtitle img {
+  border: 7px double #434A42;
+  border-radius: 5px;
+}

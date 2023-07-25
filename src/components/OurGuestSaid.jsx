@@ -5,7 +5,7 @@ const OurGuestSaid= ({ content, name, whoIs }) => {
     return (
         <>
             <p className='content'>{content}</p>
-            <FaSortDown size="30" />
+            <FaSortDown size="30" color='grey'/>
             <p className='person'>{name}, {whoIs}</p>
         </>
     )
