@@ -19,7 +19,7 @@ const RoomProvider = ({ children }) => {
     const [pets, setPets] = useState(false);
 
     useEffect(() => {
-        axios.get("http://localhost:8080/room_type").then((response) => {
+        axios.get("http://localhost:8080/room/rooms").then((response) => {
             const roomsData = formatDate(response.data);
             const featuredRoomsData = roomsData.filter((room) => room.featured === true);
 
