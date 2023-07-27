@@ -73,17 +73,17 @@ const Contact = () => {
       </Hero>
 
 
-      <div class="container">
+      <div class="contact">
             <div class="left-container">
               <div>
-                <h5>Elérhetőségeink</h5>
+                <h5 style={{ fontSize: "20px", marginBottom: "2px"}}>Elérhetőségeink</h5>
               </div>
               <ul className="contact-element">
                 <li>
                 <FaMapMarker /> 4400 Nyíregyháza, Böszörményi út 15.
                 </li>
                 <li>
-                <FaPhone /> +36 30 113 6090
+                <FaPhone /> +36 20 118 6170
                 </li>
                 <li>
                 <FaEnvelope /> hopstophotel@gmail.com
@@ -108,14 +108,15 @@ const Contact = () => {
 
           <div class="right-container" style={{ textAlign: 'center' }}>
             <div style={{ marginBottom: 30, marginTop: 20 }}>
-              <h5>Írjon nekünk üzenetet!</h5>
+              <h5 style={{ fontSize: "20px", marginBottom: "10px"}}>Írjon nekünk üzenetet!</h5>
             </div>
-            <form>
+            <form className='contact-form'>
               <div>
                 {showError && errors.name && <div className="error">{errors.name}</div>}
                 <input
                   type="text"
                   placeholder="Név"
+                  className='contact-input'
                   required
                   value={name}
                   style={{ width: '100%', marginBottom: 20, marginTop: 10 }}
@@ -127,6 +128,7 @@ const Contact = () => {
                 <input
                   type="email"
                   placeholder="E-mail cím"
+                  className='contact-input'
                   required
                   value={email}
                   style={{ width: '100%', marginBottom: 20, marginTop: 10 }}
@@ -137,6 +139,7 @@ const Contact = () => {
                 {showError && errors.message && <div className="error">{errors.message}</div>}
                 <textarea
                   placeholder="Üzenet"
+                  className='contact-textarea'
                   required
                   value={message}
                   rows={5}

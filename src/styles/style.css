@@ -395,7 +395,7 @@
   }
   .room-extras {
     width: 80vw;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 8rem auto;
   }
   .room-extras h6 {
     text-transform: capitalize;
@@ -509,7 +509,7 @@
     background-color: #918b76;
     text-align: center;
     font-size: 13px;
-    margin-top: 60px;
+    margin-top: -25px;
     opacity: 0.8;
     position: absolute;
     padding: 1.3rem;
@@ -593,7 +593,8 @@ hr {
 }
 
 .gallery {
-  margin: 20px 50px;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
   padding-top: 50px;
 }
 
@@ -608,6 +609,7 @@ hr {
 
 .attractions {
   padding: 0px 50px;
+  margin-bottom: 7rem;
 }
 
 .subtitle a {
@@ -707,105 +709,184 @@ hr {
   background-color: #fff;
 }
 
+.contact {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+}
 
+.left-container {
+  width: 41%;
+  padding: 20px;
+  margin-left: 3rem;
+}
 
+.right-container {
+  margin-left: 8rem;
+  margin-top: 7rem;
+  width: 35%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
 
+.contact-element {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.2rem;
+}
 
+.contact-element li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
 
+.contact-element li svg {
+  margin-right: 10px;
+}
 
+.iframe1 {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
 
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.error {
+  color: red;
+  margin-bottom: 5px;
+}
 
-
-   .container {
-      display: flex;
-      align-items: flex-start;
-    }
-
-    .left-container {
-      width: 41%;
-      padding: 20px;
-      margin-left: 3rem;
-    }
-
-    .right-container {
-      margin-left: 8rem;
-      margin-top: 7rem;
-      width: 35%;
-      padding: 20px;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-    }
-
-    h5 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .contact-element {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 1.2rem;
-    }
-
-    .contact-element li {
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-    .contact-element li svg {
-      margin-right: 10px;
-    }
-
-    .iframe1 {
-      width: 100%;
-      height: 400px;
-      border: 0;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .error {
-      color: red;
-      margin-bottom: 5px;
-    }
-
-    input {
-      width: 15rem !important;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
+.contact-input {
+  width: 15rem !important;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
    
-    textarea {
-      width: 25rem !important;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      margin-bottom: 20px;
-    }
+.contact-textarea {
+  width: 25rem !important;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
 
-    input::placeholder,
-    textarea::placeholder {
-      font-size: 15px;
-      text-align: center;
-    }
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+  font-size: 15px;
+  text-align: center;
+}
 
-    .button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+.button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-   .button:hover {
-      background-color: #0056b3;
-    }
+.button:hover {
+  background-color: #0056b3;
+}
+
+.privacy-policy {
+  margin: 50px;
+  text-align: justify;
+  margin-bottom: 6rem;
+}
+
+.hotel-information {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  color: #434A42;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.terms-and-conditions {
+  text-align: justify;
+  margin: 50px;
+  margin-bottom: 6rem;
+}
+
+.terms-and-conditions h5 {
+  font-weight: bold;
+  border: 7px double #434A42;
+  padding: 15px;
+  font-family: 'Rozha One', serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: #434A42 !important;
+  opacity: 0.9;
+  color: white !important;
+  border: 5px solid rgb(240, 237, 223) !important;
+  font-size: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 4px;
+  width: 50%;
+}
+
+.accordion-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  transition: transform 0.3s;
+}
+
+.accordion-button.expanded .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-text {
+  flex: 1;
+}
+
+
+.accordion-body {
+  display: flex;
+  justify-content: center;
+  padding: 12px 16px;
+  border-top: 1px solid #ccc;
+  width: 50%;
+  margin-left: 30rem;
+  background-color: white;
+  transform-origin: top;
+  animation: openAnimation 0.3s ease-in-out;
+}
+
+@keyframes openAnimation {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}

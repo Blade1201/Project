@@ -42,13 +42,15 @@ const Attractions = () => {
 
   return (
     <>
-     <Hero>
-     <Banner title="Látnivalók">
-     <Link to="/" className="btn-primary">
-            Kezdőoldalra
-          </Link>
-      </Banner>
+      <Hero>
+         <Banner title="Látnivalók">
+            <Link to="/" className="btn-primary">
+               Kezdőoldalra
+            </Link>
+          </Banner>
       </Hero>
+
+
         <div className="attractions">
           <div className="subtitle">
             {latnivaloData.map((data, index) => (
