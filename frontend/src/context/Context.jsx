@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from "react";
-import items from "../data/data";
+import axios from "axios";
 
 const RoomContext = createContext();
 
@@ -19,35 +19,46 @@ const RoomProvider = ({ children }) => {
     const [pets, setPets] = useState(false);
 
     useEffect(() => {
+        axios.get("http://localhost:8080/room_type").then((response) => {
+            const roomsData = formatDate(response.data);
+            const featuredRoomsData = roomsData.filter((room) => room.featured === true);
 
-        let roomsData = formatDate(items);
-        let featuredRoomsData = roomsData.filter((room) => room.featured === true);
+            const maxPriceData = Math.max(...roomsData.map((item) => item.price));
+            const maxSizeData = Math.max(...roomsData.map((item) => item.size));
 
-        let maxPriceData = Math.max(...roomsData.map((item) => item.price));
-        let maxSizeData = Math.max(...roomsData.map((item) => item.size));
-
-        setRooms(roomsData);
-        setFeaturedRooms(featuredRoomsData);
-        setSortedRooms(roomsData);
-        setLoading(false);
-        setPrice(maxPriceData);
-        setMaxPrice(maxPriceData);
-        setMaxSize(maxSizeData);
+            setRooms(roomsData);
+            setFeaturedRooms(featuredRoomsData);
+            setSortedRooms(roomsData);
+            setLoading(false);
+            setPrice(maxPriceData);
+            setMaxPrice(maxPriceData);
+            setMaxSize(maxSizeData);
+        });
     }, []);
 
-    const formatDate = (items) => {
-        let tempItems = items.map((item) => {
-            let id = item.sys.id;
-            let images = item.fields.images.map((image) => image.fields.file.url);
-
-            let room = { ...item.fields, images, id };
-            return room;
+    const formatDate = (data) => {
+        return data.map((item) => {
+            const { id, name, slug, type, price, size, capacity, pets, breakfast, featured, description, extras, images } = item;
+            return {
+                id,
+                name,
+                slug,
+                type,
+                price: parseFloat(price),
+                size: parseInt(size),
+                capacity: parseInt(capacity),
+                pets: pets === 1,
+                breakfast: breakfast === 1,
+                featured: featured === 1,
+                description,
+                extras: JSON.parse(extras),
+                images: JSON.parse(images),
+            };
         });
-        return tempItems;
     };
 
     const getRoom = (slug) => {
-        let tempRooms = [...rooms];
+        const tempRooms = [...rooms];
         return tempRooms.find((room) => room.slug === slug);
     };
 
@@ -65,7 +76,7 @@ const RoomProvider = ({ children }) => {
                 setCapacity(parseInt(value));
                 break;
             case "price":
-                setPrice(parseInt(value));
+                setPrice(parseFloat(value));
                 break;
             case "minSize":
                 setMinSize(parseInt(value));
@@ -105,10 +116,8 @@ const RoomProvider = ({ children }) => {
         // filter by price
         tempRooms = tempRooms.filter((room) => room.price <= price);
 
-        // filter bt size
-        tempRooms = tempRooms.filter(
-            (room) => room.size >= minSize && room.size <= maxSize
-        );
+        // filter by size
+        tempRooms = tempRooms.filter((room) => room.size >= minSize && room.size <= maxSize);
 
         // filter by breakfast
         if (breakfast) {
@@ -148,6 +157,5 @@ const RoomProvider = ({ children }) => {
         </RoomContext.Provider>
     );
 };
-
 
 export { RoomProvider, RoomContext };

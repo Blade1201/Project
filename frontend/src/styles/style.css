@@ -311,6 +311,7 @@
   }
   .img-container img {
     width: 100%;
+    height: 100%;
     display: block;
     transition: var(--mainTransition);
   }
@@ -427,7 +428,7 @@
   /* end of single room*/
   /* roomList */
   .roomslist {
-    padding: 5rem 0;
+    padding-bottom: 5rem;
   }
   .roomslist-center {
     width: 80vw;
