@@ -53,6 +53,7 @@ const FAQ = () => {
 
         <h4>Egyéb</h4>
 
+        <FAQItem question="Hogyan vehető igénybe a kedvezményes túrázás?" answer="Hotelünk recepcióján részletesebben érdeklődhet e-felől." />
         <FAQItem question="Ételallergiám van, tudja-e a szálloda kezelni?" answer="Speciális étrendet természetesen tudunk biztosítani az itt tartózkodás alatt, ehhez érkezés előtt kb. egy héttel kérjük, vegyék fel a kapcsolatot a hotellel az oldalon található telefonszámon keresztül. Vegán étkezést azonban sajnos nem tudunk biztosítani." />
         <FAQItem question="Mit nem kell magammal vinnem? (mit biztosít a szálloda?)" answer="A szállodai szobában biztosítunk törölközőket (szobait és wellness törölközőt is), fürdőköntöst (gyermek méretűt is), valamint fürdőszobai piperecikkeket." />
         <FAQItem question="Vihetek -e magammal háziállatot a szállodába?" answer="Igen, Bizonyos szobák vendégei hozhatnak háziállatot. Erről a szobák leírásában tájékozódhat." />

@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/Blade1201/Hopstop#readme",
   "dependencies": {
-    "concurrently": "^7.6.0"
+    "@adobe/react-spectrum": "^3.28.0",
+    "@mui/material": "^5.14.2",
+    "@mui/x-date-pickers": "^6.10.2",
+    "concurrently": "^7.6.0",
+    "moment": "^2.29.4",
+    "mui": "^0.0.1"
   }
 }

@@ -38,7 +38,7 @@ const Navbar = () => {
             <Link to="/">Kezdőlap</Link>
           </li>
           <li>
-            <Link to="/rooms">Szobák</Link>
+            <Link to="/reservations">Szobák</Link>
           </li>
           <li>
             <Link to="/attractions">Látnivalók</Link>
