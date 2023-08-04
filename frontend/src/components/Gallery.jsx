@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import GalleryItem from "./GalleryItem";
 import "react-multi-carousel/lib/styles.css";
-import Carousel from "react-multi-carousel"
+import Carousel from "react-multi-carousel";
 import Detail_1 from "../images/details/detail-1.jpg";
 import Detail_2 from "../images/details/detail-2.jpg";
 import Detail_3 from "../images/details/detail-3.jpg";
@@ -30,6 +30,7 @@ const Galery = () => {
           items: 1
         }
       };
+      
       
     return (
                 <div className="gallery">

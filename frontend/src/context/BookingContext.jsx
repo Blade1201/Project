@@ -1,15 +1,16 @@
+import React, { useState, createContext } from 'react';
 import axios from 'axios';
-import React, { useState } from 'react';
-import { createContext } from "react";
 
 export const BookingContext = createContext();
 
 export const Bookings = ({ children }) => {
     const [bookings, setBookings] = useState([]);
 
+
     const handleSet = (bookings) => {
         setBookings(bookings);
     }
+
 
     const handleRemove = async (booking_id) => {
         setBookings(bookings.filter((value) => value.booking_id !== booking_id));
@@ -20,6 +21,8 @@ export const Bookings = ({ children }) => {
             return false;
         }
     };
+
+    
     return (
         <BookingContext.Provider value={{ bookings, handleSet, handleRemove }}>
             {children}

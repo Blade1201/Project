@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 const FAQItem = ({ question, answer }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 

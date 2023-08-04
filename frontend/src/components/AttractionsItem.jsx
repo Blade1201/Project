@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+
 const AttractionsItem = ({ interval, images }) => {
     const [activeIndex, setActiveIndex] = useState(0);
 

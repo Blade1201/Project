@@ -8,10 +8,12 @@ export const Auth = ({ children }) => {
         JSON.parse(localStorage.getItem("user")) || null
     );
 
+
     const login = async (formData) => {
         const res = await axios.post("http://localhost:8080/auth/login", formData, { withCredentials: true });
         setCurrentUser(res.data);
     }
+
 
     const logout = async () => {
         const res = await axios.get("http://localhost:8080/auth/logout", {
@@ -20,10 +22,12 @@ export const Auth = ({ children }) => {
         setCurrentUser(null);
     }
 
+
     useEffect(() => {
         localStorage.setItem("user", JSON.stringify(currentUser));
     }, [currentUser]);
 
+    
     return (
         <AuthContext.Provider value={{ currentUser, login, logout }}>
             {children}

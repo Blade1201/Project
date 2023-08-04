@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState } from 'react';
 import axios from 'axios';
 
 export const RoomContext = createContext();
@@ -6,9 +6,11 @@ export const RoomContext = createContext();
 export const Room = ({ children }) => {
     const [rooms, setRooms] = useState([]);
 
+
     const handleSet=(rooms)=>{
         setRooms(rooms);
     };
+
 
     const handleChange = async (id, room) => {
         setRooms(rooms.map((value) => value.id !== room.id ? value : room));
@@ -24,11 +26,10 @@ export const Room = ({ children }) => {
         }
     };
 
-    return (
 
+    return (
         <RoomContext.Provider value={{rooms, handleSet, handleChange}}>
             {children}
         </RoomContext.Provider>
-    
   )
 }

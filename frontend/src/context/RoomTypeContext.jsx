@@ -1,11 +1,12 @@
+import React, { createContext, useState } from 'react';
 import axios from 'axios';
-import React, { createContext, useState } from 'react'
 
 export const RoomTypeContext = createContext();
 
 export const RoomType = ({ children }) => {
     const [roomTypes, setRoomTypes] = useState([]);
 
+    
     const handleSet = (roomTypes) => {
         setRoomTypes(roomTypes);
     };
@@ -24,6 +25,7 @@ export const RoomType = ({ children }) => {
             return false;
         }
     }
+
 
     return (
         <RoomTypeContext.Provider value={{ roomTypes, handleSet, handleChange }}>

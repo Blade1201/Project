@@ -47,6 +47,10 @@ const Navbar = () => {
             <Link to="/contact">Kapcsolat</Link>
           </li>
 
+          {currentUser != null && currentUser['isAdmin'] === 1
+              ? <li><Link to="/adminpage">Admin Felület</Link></li>
+           : ""}
+
           <li>
           {
             currentUser !== null ? <p style={{ color: "black", margin: "0.1rem", padding: "0.5rem 0", marginLeft: "19rem"}}>Bejelentkezve:  {currentUser['name']}</p> : ""

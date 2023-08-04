@@ -11,6 +11,7 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
 
   return (
     <>
@@ -22,7 +23,7 @@ const Home = () => {
               elfeledtetve a mindennapi nyüzsgő élet kihívásait, csak a pihenésre és feltöltődésre irányítva a figyelmet.
               Reméljük, hogy Önt is hamarosan Vendégeink között üdvözölhetjük!">
 
-          <Link to="/rooms" className="btn-primary"> Szobáink </Link>
+          <Link to="/reservations" className="btn-primary"> Szobáink </Link>
 
         </Banner>
       </Hero>

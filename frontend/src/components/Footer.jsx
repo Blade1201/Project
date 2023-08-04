@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Debit_Card from "../images/debit-card.jpg";
 import { FaClock, FaEnvelope, FaPhone, FaMapMarker } from 'react-icons/fa';
 
+
 const Footer = () => {
   const year = new Date().getFullYear();
 

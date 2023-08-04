@@ -16,6 +16,7 @@ const Register = () => {
 
   const navigate = useNavigate();
 
+  
   const handleSubmit = (e) => {
     if (Object.entries(formData).length === 5) {
       if (

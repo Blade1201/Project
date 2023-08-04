@@ -27,18 +27,22 @@ const Reservations = () => {
 
     const nightNumber = Math.round((Date.parse(checkOutDate) - Date.parse(checkInDate)) / 86400000)
 
+    
     const handleCheckInDateChange = (newValue) => {
         setCheckInDate(newValue);
         setCheckOutDate(newValue.clone().add(1, 'days'));
       };
       
+
       const handleCheckOutDateChange = (newValue) => {
         setCheckOutDate(newValue);
       };
 
+
     const handleChangeRoomType = (event) => {
         setType(event.target.value);
     };
+
 
     const handleSubmit = () => {
         axios.post("http://localhost:8080/reservation/reservations/availablerooms", { type, checkInDate, checkOutDate }, {

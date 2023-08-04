@@ -143,7 +143,7 @@ const Contact = () => {
                   required
                   value={message}
                   rows={5}
-                  style={{ width: '100%', marginBottom: 20, marginTop: 10 }}
+                  style={{ width: '100%', resize: "none", marginBottom: 20, marginTop: 10 }}
                   onChange={(e) => setMessage(e.target.value)}
                 />
               </div>

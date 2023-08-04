@@ -1,5 +1,5 @@
-import axios from 'axios';
 import React, { createContext, useState } from 'react';
+import axios from 'axios';
 
 export const UserContext = createContext();
 
@@ -11,6 +11,7 @@ export const Users = ({ children }) => {
         setUsers(users);
     }
 
+    
     const handleChange = async (user_id, user) => {
         setUsers(users.map((value) => value.user_id !== user.user_id ? value : user));
         try {
@@ -25,6 +26,7 @@ export const Users = ({ children }) => {
         }
     };
 
+
     const handleRemove = async (user_id) => {
         setUsers(users.filter((value) => value.user_id !== user_id));
         try {
@@ -35,6 +37,7 @@ export const Users = ({ children }) => {
             return false;
         }
     };
+
 
     return (
         <UserContext.Provider value={{ users, handleSet, handleChange, handleRemove }}>

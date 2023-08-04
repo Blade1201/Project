@@ -12,8 +12,16 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import FAQ from "./pages/FAQ";
 import Reservations from "./pages/Reservations";
 import Register from "./pages/Register";
+import AdminPage from "./pages/admin/AdminPage";
+import UsersManagement from "./pages/admin/users/UsersManagement";
+import UsersModifications from "./pages/admin/users/UsersModifications";
+import ReservationsManagement from "./pages/admin/reservations/ReservationsManagement";
+import RoomsManagement from "./pages/admin/rooms/RoomsManagement";
+import RoomsModifications from "./pages/admin/rooms/RoomsModifications";
+import RoomTypeModifications from "./pages/admin/rooms/RoomTypeModifications";
 import Login from "./pages/Login";
 import axios from 'axios';
+import { AuthContext } from "./context/AuthContext";
 import { RoomTypeContext } from './context/RoomTypeContext';
 import { RoomContext } from "./context/RoomContext";
 import { BookingContext } from './context/BookingContext';
@@ -24,6 +32,8 @@ const App = () => {
   const { handleSet: handleSetRoomTypes } = useContext(RoomTypeContext);
   const { handleSet: handleSetRooms } = useContext(RoomContext);
   const { handleSet: handleSetBooking } = useContext(BookingContext);
+
+  const { currentUser } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,6 +70,7 @@ const App = () => {
   return (
     <>
         <Navbar />
+        
         <Routes>
           <Route path="/" Component={Home} />
           <Route path="/reservations" Component={Reservations} />
@@ -70,8 +81,26 @@ const App = () => {
           <Route path="/frequently_asked_questions" Component={FAQ} />
           <Route path="/register" Component={Register} />
           <Route path="/login" Component={Login} />
+
+          {
+              currentUser != null && currentUser['isAdmin'] === 1 && (
+                <>
+                  <Route path='/adminpage' element={<AdminPage />} />
+                  <Route path='/adminpage/users' element={<UsersManagement />} />
+                  <Route path='/adminpage/users/modifications/:id' element={<UsersModifications />} />
+
+                  <Route path='/adminpage/rooms' element={<RoomsManagement />} />
+                  <Route path='/adminpage/roomtypes/modifications/:id' element={<RoomsModifications />} />
+                  <Route path='/adminpage/rooms/modifications/:id' element={<RoomTypeModifications />} />
+
+                  <Route path='/adminpage/reservations' element={<ReservationsManagement />} />
+                </>
+              )
+            }
+
           <Route path="*" Component={Error} />
         </Routes>
+
         <Footer />
       </>
   );

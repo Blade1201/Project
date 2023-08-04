@@ -11,18 +11,18 @@ import {BrowserRouter} from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Auth>
-    <Users>
-        <RoomType>
-            <Room>
-                <Bookings>
-            <BrowserRouter>
+        <Users>
+            <RoomType>
+                <Room>
+                    <Bookings>
+                        <BrowserRouter>
 
-                <App />
+                            <App />
 
-            </BrowserRouter>
-            </Bookings>
-                    </Room>
-                </RoomType>
-            </Users>
-        </Auth>
+                        </BrowserRouter>
+                    </Bookings>
+                </Room>
+            </RoomType>
+        </Users>
+    </Auth>
 );

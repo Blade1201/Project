@@ -4,15 +4,15 @@ import Hero from '../components/Hero';
 import Banner from '../components/Banner';
 import Title from '../components/Title';
 import AttractionsItem from '../components/AttractionsItem';
-import kep1 from "../images/attractions/lido.jpg"
-import kep2 from "../images/attractions/lido2.jpg"
-import kep3 from "../images/attractions/lido3.jpg"
-import kep4 from "../images/attractions/zoo.jpg"
-import kep5 from "../images/attractions/zoo2.jpg"
-import kep6 from "../images/attractions/zoo3.jpg"
-import kep7 from "../images/attractions/openairmuseum.jpg"
-import kep8 from "../images/attractions/openairmuseum2.jpg"
-import kep9 from "../images/attractions/openairmuseum3.jpg"
+import kep1 from "../images/attractions/lido.jpg";
+import kep2 from "../images/attractions/lido2.jpg";
+import kep3 from "../images/attractions/lido3.jpg";
+import kep4 from "../images/attractions/zoo.jpg";
+import kep5 from "../images/attractions/zoo2.jpg";
+import kep6 from "../images/attractions/zoo3.jpg";
+import kep7 from "../images/attractions/openairmuseum.jpg";
+import kep8 from "../images/attractions/openairmuseum2.jpg";
+import kep9 from "../images/attractions/openairmuseum3.jpg";
 
 const Attractions = () => {
   const latnivaloData = [
