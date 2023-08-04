@@ -10,10 +10,6 @@ Készítette:
     • Holovacki Román
     
 
- Nyíregyháza 4400      
- Szabolcs-Szatmár-Bereg        
- @2024 Hopstop. Minden jog fenntartva. 
-
 <br />                         
 														         
 Használati útmutató:
@@ -37,3 +33,25 @@ Használati útmutató:
       az összes szükséges modult. Ezután az " npm start " paranccsal indítsuk el az alkalmazást
       amit a http://localhost:3000 címen tudunk elérni.
       Első indításnál az alkalmazás indítása pár percet vehet igénybe.
+
+
+<br />     
+
+Belépési adatok:
+
+1. Felhasználói fiók belépési adatai:
+```
+      Email-cím:    user@user.com
+      Jelszó:       User001_
+```
+
+2. Adminisztrátori fiók belépési adatai:
+```
+      Email-cím:    admin@admin.com
+      Jelszó:       Admin123?
+```
+
+
+ Nyíregyháza 4400      
+ Szabolcs-Szatmár-Bereg        
+ @2024 Hopstop. Minden jog fenntartva. 

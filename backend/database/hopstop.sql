@@ -189,7 +189,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `email`, `password`, `name`, `address`, `phone_number`, `is_admin`) VALUES
-(7, 'admin@admin.com', '$2a$12$WSMOJMaXJUTYbzeTwbk91eljXOybBDGGy2grn9A9n21SiRwiTqX2e', 'Admin Admin', '1111 Admin, Admin utca 1', '06301234567', 1),
+(7, 'admin@admin.com', '$2a$12$iqYoq/UNaXS/Q2qU2ltutez2l.1gzj9zCxQwigA8kQOV8HA0I8t1u', 'Admin Admin', '1111 Admin, Admin utca 1', '06301234567', 1),
 (11, 'user@user.com', '$2a$12$CfRGPiODgmtBpn9O7CMuq.kpj7C00eJENncP/5.PPIRgIvUTIYwKm', 'User User', '1111 User, User utca 1.', '06301239876', 0);
 
 --
