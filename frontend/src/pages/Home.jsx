@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import GuestReview from "../components/GuestReview";
+import FeaturedRooms from "../components/FeaturedRooms";
 import Gallery from "../components/Gallery";
 
 const Home = () => {
@@ -23,11 +24,12 @@ const Home = () => {
               elfeledtetve a mindennapi nyüzsgő élet kihívásait, csak a pihenésre és feltöltődésre irányítva a figyelmet.
               Reméljük, hogy Önt is hamarosan Vendégeink között üdvözölhetjük!">
 
-          <Link to="/reservations" className="btn-primary"> Szobáink </Link>
+          <Link to="/rooms" className="btn-primary"> Szobáink </Link>
 
         </Banner>
       </Hero>
       <Services />
+      <FeaturedRooms />
       <GuestReview />
       <Gallery />
     </>

@@ -38,7 +38,10 @@ const Navbar = () => {
             <Link to="/">Kezdőlap</Link>
           </li>
           <li>
-            <Link to="/reservations">Szobák</Link>
+            <Link to="/rooms">Szobák</Link>
+          </li>
+          <li>
+            <Link to="/reservations">Foglalás</Link>
           </li>
           <li>
             <Link to="/attractions">Látnivalók</Link>
@@ -48,12 +51,12 @@ const Navbar = () => {
           </li>
 
           {currentUser != null && currentUser['isAdmin'] === 1
-              ? <li><Link to="/adminpage">Admin Felület</Link></li>
+              ? <li><Link className='admin-btn' to="/adminpage">Admin Felület</Link></li>
            : ""}
 
           <li>
           {
-            currentUser !== null ? <p style={{ color: "black", margin: "0.1rem", padding: "0.5rem 0", marginLeft: "19rem"}}>Bejelentkezve:  {currentUser['name']}</p> : ""
+            currentUser !== null ? <p style={{ color: "black", margin: "0.1rem", padding: "0.5rem 0", marginLeft: "8.7rem"}}>Bejelentkezve:  {currentUser['name']}</p> : ""
           }
           </li>
 
@@ -63,9 +66,9 @@ const Navbar = () => {
             currentUser === null
                 ?
                 <>
-                  <Link to="/login" style={{ marginLeft: "48rem" }}>Bejelentkezés</Link>
+                  <Link to="/login" style={{ marginLeft: "45rem" }}>Bejelentkezés</Link>
                 </>
-                : <Link to="/login" onClick={() =>  logout()} style={{ marginLeft: "17rem" }}>Kijelentkezés</Link>
+                : <Link to="/login" onClick={() =>  logout()} style={{ marginLeft: "11rem" }}>Kijelentkezés</Link>
               }
 
           </li>

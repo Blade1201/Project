@@ -4,6 +4,8 @@ import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
+import Room from "./pages/Room";
+import SingleRoom from "./pages/SingleRoom";
 import Footer from "./components/Footer";
 import Attractions from "./pages/Attractions";
 import Contact from "./pages/Contact";
@@ -27,6 +29,8 @@ import { RoomContext } from "./context/RoomContext";
 import { BookingContext } from './context/BookingContext';
 import { UserContext } from './context/UserContext';
 
+
+
 const App = () => {
   const { handleSet: handleSetUsers } = useContext(UserContext);
   const { handleSet: handleSetRoomTypes } = useContext(RoomTypeContext);
@@ -34,6 +38,7 @@ const App = () => {
   const { handleSet: handleSetBooking } = useContext(BookingContext);
 
   const { currentUser } = useContext(AuthContext);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -67,12 +72,16 @@ const App = () => {
     fetchData();
   }, []);
 
+
+
   return (
     <>
         <Navbar />
         
         <Routes>
           <Route path="/" Component={Home} />
+          <Route path="/rooms/" Component={Room} />
+          <Route path="/rooms/:slug" Component={SingleRoom} />
           <Route path="/reservations" Component={Reservations} />
           <Route path="/attractions" Component={Attractions} />
           <Route path="/contact" Component={Contact} />

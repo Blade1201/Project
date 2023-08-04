@@ -137,7 +137,7 @@
   }
   
   .show-nav {
-    height: 260px;
+    height: 415px;
   }
 
   @media screen and (min-width: 870px) {
@@ -998,4 +998,16 @@ hr {
   height: 250px;
   padding-top: 80px;
   width: 90%;
+}
+
+.admin-btn {
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainBlack);
+  background: var(--primaryColor);
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+}
+.admin-btn:hover {
+  background: transparent;
+  color: var(--primaryColor);
 }
