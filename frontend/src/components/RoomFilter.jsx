@@ -1,4 +1,5 @@
 import React, {useContext} from "react";
+import "../styles/components/roomsfilter.css";
 import {RoomListContext} from "../context/RoomListContext";
 import Title from "./Title";
 
@@ -130,7 +131,7 @@ const RoomFilter = ({ rooms }) => {
                   checked={pets}
                   onChange={handleChange}
               />
-              <label htmlFor="pets">Állatok</label>
+              <label htmlFor="pets">Háziállatok</label>
             </div>
           </div>
         </form>

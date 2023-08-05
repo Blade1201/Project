@@ -1,0 +1,14 @@
+.terms-and-conditions {
+    text-align: justify;
+    margin: 50px;
+    margin-bottom: 6rem;
+}
+  
+.terms-and-conditions h5 {
+    font-weight: bold;
+    border: 7px double #434A42;
+    padding: 15px;
+    font-family: 'Rozha One', serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,39 @@
+.footer-title {
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.footer-contact li {
+    list-style-type: none;
+    padding: 6px 0px;
+}
+
+@media (min-width: 992px) {
+  .col-md-4 {
+    width: 33.333333%;
+    float: left;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-xs-6 {
+    width: 50%;
+    float: left;
+  }
+}
+
+.information {
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+
+.information p {
+  padding: 5px 0px;
+}
+
+.information:hover {
+    color: white;
+}

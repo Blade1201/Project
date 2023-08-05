@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import "../styles/components/featuredrooms.css";
 import {RoomListContext} from '../context/RoomListContext';
 import Title from './Title';
 import Room from './Room';

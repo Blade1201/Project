@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import "../styles/components/navbar.css";
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 import { FaAlignRight } from 'react-icons/fa';

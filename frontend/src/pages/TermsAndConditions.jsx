@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/pages/termsandconditions.css";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import "../styles/pages/contact.css";
 import Swal from 'sweetalert2';
 import { FaClock, FaEnvelope, FaPhone, FaMapMarker } from 'react-icons/fa';
 import Hero from "../components/Hero";

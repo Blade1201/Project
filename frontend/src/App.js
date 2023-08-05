@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import "./styles/style.css";
+import "./styles/main.css";
 import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Error from "./pages/Error";

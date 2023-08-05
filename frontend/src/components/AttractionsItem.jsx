@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "../styles/pages/attractions.css";
 
 
 const AttractionsItem = ({ interval, images }) => {

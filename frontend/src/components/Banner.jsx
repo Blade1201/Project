@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/components/banner.css";
 
 const Banner = ({ children, title, subtitle }) => {
   return (

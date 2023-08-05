@@ -1,0 +1,91 @@
+.custom-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+  
+.custom-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f1de;
+    border-radius: 5px;
+    border: 7px double #434a42;
+    padding: 30px;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+  
+.custom-icon {
+    color: #434a42;
+    font-size: 60px;
+}
+  
+.custom-heading {
+    font-family: 'Rozha One', sans-serif;
+    margin-top: 20px;
+}
+  
+.custom-input-group {
+    margin-top: 10px;
+    width: 100%;
+}
+  
+.custom-form-control {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+  
+.custom-text-muted {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+  
+.custom-checkbox-group {
+    margin-top: 10px;
+    width: 100%;
+}
+  
+.custom-checkbox-label {
+    display: flex;
+    align-items: center;
+    color: #434a42;
+}
+  
+.custom-checkbox {
+    margin-right: 10px;
+}
+  
+.custom-form-text {
+    font-size: 0.875rem;
+}
+  
+.custom-submit-button {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+  
+.custom-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+  
+.custom-login-link {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+  
+.custom-link {
+    color: #434a42;
+    text-decoration: none;
+}

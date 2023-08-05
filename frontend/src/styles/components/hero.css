@@ -1,0 +1,7 @@
+.defaultHero{
+    min-height: 60vh;
+    background: url("../../images/skyline.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

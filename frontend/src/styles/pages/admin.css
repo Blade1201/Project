@@ -1,0 +1,16 @@
+.admin-page{
+    margin-bottom: 16.9rem;
+    display: flex;
+    margin-top: 12rem;
+    margin-left: 4rem;
+}
+  
+.page {
+    background-color: #27857d;
+    text-align: center;
+    border: 7px double #434A42;
+    border-radius: 11px;
+    height: 250px;
+    padding-top: 80px;
+    width: 90%;
+}

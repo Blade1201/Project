@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import "../styles/pages/authentication.css";
 import { Link, useNavigate } from 'react-router-dom';
 import { FaSignInAlt } from 'react-icons/fa';
 import { AuthContext } from '../context/AuthContext';

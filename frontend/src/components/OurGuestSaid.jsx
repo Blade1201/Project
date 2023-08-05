@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/components/guest.css";
 import { FaSortDown } from 'react-icons/fa';
 
 const OurGuestSaid= ({ content, name, whoIs }) => {

@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/components/gallery.css";
 
 const GalleryItem = ({ url }) => {
     return (

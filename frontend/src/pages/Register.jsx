@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/pages/authentication.css";
 import { Link, useNavigate } from 'react-router-dom';
 import { BiSolidUserCircle } from 'react-icons/bi';
 import axios from 'axios';

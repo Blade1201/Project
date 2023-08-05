@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styles/components/services.css";
 import { FaHiking, FaShuttleVan, FaBeer} from 'react-icons/fa';
 import { BiRestaurant, BiSolidSpa } from 'react-icons/bi';
 import Title from './Title';

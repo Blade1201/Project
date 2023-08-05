@@ -1,0 +1,14 @@
+.gallery {
+    margin-bottom: 6rem;
+    margin-top: 2rem;
+    padding-top: 50px;
+}
+  
+.gallery-item img {
+    border-radius: 20px;
+}
+  
+.gallery-item {
+    text-align: center;
+    width: 200px;
+}

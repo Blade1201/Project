@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/components/footer.css";
 import { Link } from 'react-router-dom';
 import Debit_Card from "../images/debit-card.jpg";
 import { FaClock, FaEnvelope, FaPhone, FaMapMarker } from 'react-icons/fa';

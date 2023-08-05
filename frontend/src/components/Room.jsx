@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/components/room.css";
 import { Link } from "react-router-dom";
 
 

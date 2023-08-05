@@ -1,4 +1,5 @@
 import React, {useContext, useEffect} from 'react';
+import "../styles/pages/singleroom.css";
 import {Link, useParams} from 'react-router-dom';
 import {RoomListContext} from '../context/RoomListContext';
 import Banner from '../components/Banner';

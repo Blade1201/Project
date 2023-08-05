@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/pages/faq.css";
 
 
 const FAQItem = ({ question, answer }) => {

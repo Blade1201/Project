@@ -6,7 +6,7 @@ export const Page = ({ title, link }) => {
         <div className='page'>
             <h4>{title}</h4>
             <Link to={link}>
-                <button id='button'>Tovább <br /> a kezelőfelületre </button>
+                <button className='btn-primary'>Tovább <br /> a kezelőfelületre </button>
             </Link>
         </div>
     )
