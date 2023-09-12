@@ -7,7 +7,7 @@ moment.locale("hu")
 
 sendMail = (email, checkInDate, checkOutDate, nightNumber, amount) => {
 
-    const message = `<h4>Tisztelt ${email}!</h4><p>Köszönjük, hogy nálunk foglalt, melyet ezen levéllel visszaigazolunk.</p><p ><b>Foglalás adatai:</b></p><ul><li><p>Érkezés: <b>${moment(checkInDate).format('LL')}</b> </p></li> <li><p>Távozás: <b>${moment(checkOutDate).format('LL')}</b> </p></li><li><p>Éjszakák száma: <b>${nightNumber}</b> </p></li><li><p>Fizetendő összeg: <b>${amount} Ft</b> </p></li></ul><br><p>Tisztelettel: <br>Heaven Hotel csapata</p><br><hr ><p > Ha bármilyen kérdése van, keresse recepciónkat az alábbi telefonszámon: +36-30-234-6421</p>`
+    const message = `<h4>Tisztelt ${email}!</h4><p>Köszönjük, hogy nálunk foglalt, melyet ezen levéllel visszaigazolunk.</p><p ><b>Foglalás adatai:</b></p><ul><li><p>Érkezés: <b>${moment(checkInDate).format('LL')}</b> </p></li> <li><p>Távozás: <b>${moment(checkOutDate).format('LL')}</b> </p></li><li><p>Éjszakák száma: <b>${nightNumber}</b> </p></li><li><p>Fizetendő összeg: <b>${amount} Ft</b> </p></li></ul><br><p>Tisztelettel: <br>Hopstop Hotel csapata</p><br><hr ><p > Ha bármilyen kérdése van, keresse recepciónkat az alábbi telefonszámon: +36-30-234-6421</p>`
 
     const transporter = nodemailer.createTransport(smtpTransport({
         service: "gmail",

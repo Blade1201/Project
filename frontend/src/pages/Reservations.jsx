@@ -73,7 +73,7 @@ const Reservations = () => {
                 position: 'center',
                 icon: 'warning',
                 title: "Sikertelen foglalás!",
-                text: 'Jelentkezzen be fiókjába!',
+                text: 'Jelentkezzen be a fiókjába!',
                 showConfirmButton: false,
                 timer: 5000
             })
