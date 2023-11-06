@@ -2,12 +2,14 @@
 
 Témavezető:
 
-    • Juhászné Kovács Ildikó
-    • Szabó Ákos
+    • Kocsán Zsanett
+    • Rehó János
 
 Készítette:
 
-    • Holovacki Román
+    • Molnár Áron
+    • Kohán Zsolt Milán
+    • Orosz Kristóf
     
 
 <br />                         
