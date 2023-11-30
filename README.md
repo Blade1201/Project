@@ -3,7 +3,7 @@
 Témavezető:
 
     • Kocsán Zsanett
-    • Rehó János
+    • Tisza Zoltán
 
 Készítette:
 
