@@ -2,14 +2,12 @@
 
 Témavezető:
 
-    • Kocsán Zsanett
-    • Tisza Zoltán
+    • Rehó János
 
 Készítette:
 
     • Molnár Áron
-    • Kohán Zsolt Milán
-    • Orosz Kristóf
+    • Pelles Martin
     
 
 <br />                         
