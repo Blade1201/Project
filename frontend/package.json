@@ -1,6 +1,8 @@
 {
   "name": "hopstop",
   "version": "0.1.0",
+  "author": "Molnár Áron (Blade1201) && Pelles Martin (Pepevokoszcs)",
+  "license": "ISC",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",

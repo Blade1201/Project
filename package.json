@@ -1,6 +1,8 @@
 {
   "name": "hopstop",
   "version": "1.0.0",
+  "author": "Molnár Áron (Blade1201) && Pelles Martin (Pepevokoszcs)",
+  "license": "ISC",
   "description": "",
   "main": "",
   "scripts": {
@@ -14,8 +16,6 @@
     "type": "git",
     "url": "https://github.com/Blade1201/Hopstop.git"
   },
-  "author": "Holovacki Román (Blade1201)",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Blade1201/Hopstop/issues"
   },
