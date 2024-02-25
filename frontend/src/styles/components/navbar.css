@@ -11,6 +11,7 @@
 .nav-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav-btn {
@@ -35,7 +36,7 @@
 .nav-links a {
     display: inline-block;
     text-decoration: none;
-    padding: 1rem 0;
+    padding: 1rem;
     color: var(--mainBlack);
     transition: var(--mainTransition);
     text-align: center;
@@ -53,14 +54,14 @@
 }
   
 .show-nav {
-    height: 415px;
+    height: 400px;  
 }
 
 .admin-btn {
     letter-spacing: var(--mainSpacing);
     color: var(--mainBlack);
     background: var(--primaryColor);
-    border: 3px solid var(--primaryColor);
+    border: 1px solid var(--primaryColor);
     transition: var(--mainTransition);
 }
 
@@ -69,7 +70,7 @@
     color: var(--primaryColor);
 }
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 1510px) {
     .nav-btn {
       display: none;
     }
@@ -78,6 +79,7 @@
       max-width: 100%;
       margin: 0 auto;
       display: flex;
+      align-items: center;
     }
 
     .nav-links {
@@ -90,4 +92,47 @@
       margin: 0 1rem;
       padding: 0.5rem 0;
     }
+
+    .user-buttons {
+      display: ruby;
+      margin-left: 15rem;
+    } 
+   
+}
+
+@media screen and (max-width: 1510px) {
+    .nav-btn {
+        order: 1;
+      } 
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 11rem;
+    }
+
+    .user-buttons {
+        margin-top: 2.5rem;
+        display: block;
+        margin-left: 1rem !important;
+        line-height: 0.8;
+      } 
+}
+
+@media screen and (max-width: 1730px) {
+    .user-buttons {
+        margin-left: 12rem;
+      } 
+}
+
+@media screen and (max-width: 1660px) {
+    .user-buttons {
+        margin-left: 8rem;
+      } 
+}
+
+@media screen and (max-width: 1580px) {
+    .user-buttons {
+        margin-left: 3rem;
+      } 
 }

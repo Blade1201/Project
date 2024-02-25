@@ -16,7 +16,7 @@ const Footer = () => {
                             <hr />
                             <ul className="footer-contact">
                                 <li>
-                                    <FaMapMarker /> 4400 Nyíregyháza Böszörményi út 15.
+                                    <FaMapMarker /> 4400 Nyíregyháza, Böszörményi út 15.
                                 </li>
                                 <li>
                                     <a style={{ color: "black", textDecoration: "none" }} href="tel:+36201186170">

@@ -2,7 +2,7 @@
     padding: 0px 50px;
     margin-bottom: 7rem;
 }
-  
+
 .subtitle a {
     text-decoration: none;
     color: #434A42;
@@ -98,4 +98,10 @@
   
 .carousel-indicator.active {
     background-color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+    .attractions-container {
+        flex-wrap: wrap;
+    }    
 }

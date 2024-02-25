@@ -54,7 +54,7 @@ const Attractions = () => {
         <div className="attractions">
           <div className="subtitle">
             {latnivaloData.map((data, index) => (
-              <div key={index} style={{display: "flex", alignItems: "center", marginLeft: index === 1 ? "0.3rem" : index === 2 ? "0.2rem" : "0", marginTop: index === 0 ? "5rem" : "1.8rem"}}>
+              <div className='attractions-container' key={index} style={{display: "flex", alignItems: "center", marginLeft: index === 1 ? "0.3rem" : index === 2 ? "0.2rem" : "0", marginTop: index === 0 ? "5rem" : "1.8rem"}}>
                 <h1 style={{marginTop: "5rem", width: "250px"}}>
                   <a href={data.link} target="_blank" rel="noreferrer">
                   <Title title={data.place}/>

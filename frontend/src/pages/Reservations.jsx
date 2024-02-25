@@ -144,54 +144,68 @@ const Reservations = () => {
             </Hero>
 
             <div style={{ marginTop: 30,marginBottom: "18.1rem" }}>
-                <form onSubmit={handleSubmit} style={{ textAlign: 'center', marginBottom: 30 }}>
-                <div style={{ height: 70, display: 'flex', gap: 20, alignItems: 'center', marginLeft: "45rem"}}>
-                    <DatePicker
-                        minDate={new Date()}
-                        label="Érkezés"
-                        value={checkInDate}
-                        onChange={handleCheckInDateChange}
-                        />
 
-                    <DatePicker
-                        minDate={checkInDate}
-                        label="Távozás"
-                        value={checkOutDate}
-                        onChange={handleCheckOutDateChange}
-                        />
-                <p style={{ paddingTop: 12, width: 'auto' }}> {nightNumber} éjszaka</p>
-                </div>
 
-            <div style={{ margin: '16px', width: '250px', marginLeft: "51rem"}}>
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+    <form onSubmit={handleSubmit} style={{ textAlign: 'center', marginBottom: 30 }}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginBottom: 20 }}>
+            <div style={{ marginRight: 20 }}>
+                <DatePicker
+                    minDate={new Date()}
+                    label="Érkezés"
+                    value={checkInDate}
+                    onChange={handleCheckInDateChange}
+                />
+            </div>
+            <div style={{ marginRight: 20 }}>
+                <DatePicker
+                    minDate={checkInDate}
+                    label="Távozás"
+                    value={checkOutDate}
+                    onChange={handleCheckOutDateChange}
+                />
+            </div>
+            <p> {nightNumber} éjszaka</p>
+        </div>
+
+        <div style={{ marginBottom: 20 }}>
             <label id="demo-simple-select-label">Szobatípus</label>
             <select
                 id="demo-simple-select"
                 value={type}
                 onChange={handleChangeRoomType}
                 style={{
+                    width: '200px', // Adjust width as needed
+                    margin: '0 auto', // Center the select element
                     display: 'block',
-                    width: '100%',
                     padding: '8px',
                     border: '1px solid #ccc',
                     borderRadius: '4px',
-                    textAlign: "center",
-                    }}
-                    >
-            <option value="">
-                <em>nincs kiválasztva</em>
-            </option>
-                {roomTypes.map((val, index) => (
-                <option key={index} value={val.room_type_name}>
-                    {val.room_type_name}
+                    textAlign: "center"
+                }}
+            >
+                <option value="">
+                    <em>nincs kiválasztva</em>
                 </option>
+                {roomTypes.map((val, index) => (
+                    <option key={index} value={val.room_type_name} style={{textAlign: 'center'}}>
+                        {val.room_type_name}
+                    </option>
                 ))}
             </select>
-            </div>
+        </div>
 
-                    <button type='button' onClick={() => { setShow(true); handleSubmit() }} style={{ margin: "15", marginRight: "2rem" }}>
-                        Szabad szobák keresése
-                    </button>
-                </form>
+        <div>
+        <button type='button' onClick={() => { setShow(true); handleSubmit() }} style={{ margin: "15", padding: '10px 10px', backgroundColor: 'green', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+                Szabad szobák keresése
+            </button>
+        </div>
+    </form>
+</div>
+
+
+
+
                 <hr />
                 <div className="row">
                     {
@@ -209,7 +223,7 @@ const Reservations = () => {
                                         <p style={{ textAlign: "center", fontWeight: "bold" }}>
                                             {value.room_type_name}
                                         </p>
-
+                                        
                                         <hr style={{ margin: 'auto', padding: 15 }} />
 
                                         <p textAlign={'justify'} >
@@ -234,8 +248,9 @@ const Reservations = () => {
 
                                     </dic>
 
-                                    <div className="card-actions">
-                                        <button onClick={() => reservation(value.room_id, value.price_night)}>Foglalás</button>
+                                    <div className="card-actions" style={{textAlign: "center", marginTop: "1rem"}}>
+                                        <button onClick={() => reservation(value.room_id, value.price_night)}
+                                        style={{ margin: "15", padding: '10px 10px', backgroundColor: 'green', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', display: 'block', margin: '0 auto' }}>Foglalás</button>
                                     </div>
                                 </div>
                             )

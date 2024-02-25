@@ -116,6 +116,7 @@ const Register = () => {
           name="address"
           onChange={({ target: { name, value } }) => setFormData({ ...formData, [name]: value })}
         />
+          <small className="custom-form-text custom-text-muted">Például: 1135 Budapest, Aranyosi utca 12</small>
       </div>
 
       <div className="custom-input-group">

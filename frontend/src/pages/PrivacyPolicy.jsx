@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
         <p className="hotel-information">
             Név: Hopstop Hotel
             <br></br>
-            Székhely: 4400 Nyíregyháza Böszörményi út 15.
+            Székhely: 4400 Nyíregyháza, Böszörményi út 15.
             <br></br>
             Cégjegyzékszám: 01-01-001489
             <br></br>A bejegyző bíróság megnevezése: Nem ismert
