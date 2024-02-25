@@ -54,6 +54,6 @@ Belépési adatok:
 
 <br /> 
 
- Nyíregyháza 4400      
+ 4400 Nyíregyháza      
  Szabolcs-Szatmár-Bereg        
  @2024 Hopstop. Minden jog fenntartva. 
