@@ -94,16 +94,20 @@ const UsersModifications = () => {
                 </Banner>
             </Hero>
 
-                <h1 style={{ marginTop: "4rem" }}>Módosítás - <i style={{ color: "#434A42" }}>{current[0]?.name}</i></h1>
+                <h1 style={{ marginTop: "4rem", justifyContent:"center", display: "flex" }}>Módosítás - <i style={{ color: "#434A42" }}>{current[0]?.name}</i></h1>
                 <div style={{ textAlign: "center" }}>
                     <hr />
                 </div>
+
+                <div style={{display: "grid", justifyContent: "center"}}>
+
+                <div style={{  marginBottom: "7rem",marginTop: "3rem",width: "100%", padding: "20px", backgroundColor: "#f5f5f5",borderRadius: "10px"}}>
 
                 <div style={{ margin: '1rem' }}>
                 <label style={{ display: 'block', marginBottom: '0.5rem' }}>E-mail</label>
                 <input
                     style={{
-                        width: '550px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -113,13 +117,13 @@ const UsersModifications = () => {
                     onChange={(e) => handleChange(e)}
                     value={formData?.email || ""}
                 />
-            </div>
+                </div>
 
             <div style={{ margin: '1rem' }}>
                 <label style={{ display: 'block', marginBottom: '0.5rem' }}>Név</label>
                 <input
                     style={{
-                        width: '550px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -135,7 +139,7 @@ const UsersModifications = () => {
                 <label style={{ display: 'block', marginBottom: '0.5rem' }}>Lakcím</label>
                 <input
                     style={{
-                        width: '550px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -151,7 +155,7 @@ const UsersModifications = () => {
                 <label style={{ display: 'block', marginBottom: '0.5rem' }}>Telefonszám</label>
                 <input
                     style={{
-                        width: '550px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -163,20 +167,21 @@ const UsersModifications = () => {
                 />
             </div>
 
-                <div >
+                <div style={{ margin: '1rem', textAlign: "center" }}>
                     <input id="user" type="radio" name="is_admin" value="0" checked={formData?.is_admin === "0"} onChange={(e) => handleChange(e)} />
-                    <label style={{ fontFamily: 'Rozha One' }} htmlFor="user">Felhasználó</label>
+                    <label style={{ fontFamily: 'Rozha One', cursor: "pointer" }} htmlFor="user">Felhasználó</label>
                     <input style={{ marginLeft: 70 }} id="admin" type="radio" name="is_admin" value="1" checked={formData?.is_admin === "1"} onChange={(e) => handleChange(e)} />
-                    <label style={{ fontFamily: 'Rozha One' }} htmlFor="admin">Adminisztrátor</label>
+                    <label style={{ fontFamily: 'Rozha One', cursor: "pointer" }} htmlFor="admin">Adminisztrátor</label>
                 </div>
 
                 
 
                 <button
-                    style={{ marginBottom: "7rem" }}
+                    style={{ marginLeft: "auto", marginRight: "auto", 
+                    padding: "10px", backgroundColor: "green", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block", marginTop: "2rem" }}
                     onClick={() =>
                         Swal.fire({
-                            title: 'Biztos módosítani szeretné?',
+                            title: 'Biztosan módosítani szeretné?',
                             text: "A módosítás nem visszavonható művelet!",
                             icon: 'warning',
                             showCancelButton: true,
@@ -199,6 +204,8 @@ const UsersModifications = () => {
                 >
                     Módosítás
                 </button>
+                </div>
+                </div>
             </>
     )
 }

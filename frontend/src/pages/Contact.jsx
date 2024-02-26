@@ -77,7 +77,7 @@ const Contact = () => {
       <div className="contact">
             <div className="left-container">
               <div>
-                <h5 style={{ fontSize: "20px", marginBottom: "2px"}}>Elérhetőségeink</h5>
+                <h5 style={{ fontSize: "20px", marginBottom: "10px"}}>Elérhetőségeink</h5>
               </div>
               <ul className="contact-element">
                 <li>

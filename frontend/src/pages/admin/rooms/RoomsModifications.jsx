@@ -95,12 +95,14 @@ const RoomsModifications = () => {
                 </div>
 
 
-            <div style={{ marginBottom: "6rem", textAlign: "center" }}>
+            <div style={{  marginBottom: "7rem",marginTop: "3rem",width: "20%", padding: "20px", backgroundColor: "#f5f5f5",borderRadius: "10px",
+        display: "flex", flexDirection: "column", textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
+
                 <div style={{ margin: '1rem' }}>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Szobaszám</label>
                 <input
                     style={{
-                        width: '550px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -118,7 +120,7 @@ const RoomsModifications = () => {
                         name="room_type_id"
                         value={formData.room_type_id}
                         onChange={handleChange}
-                        style={{ width: '450px' }}
+                        style={{ width: '250px' }}
                     >
                     {roomTypes.map((val, index) => (
                         <option key={index} value={val.room_type_id}>{val.room_type_name}</option>
@@ -129,6 +131,8 @@ const RoomsModifications = () => {
                 <br />
 
                 <button
+                style={{ marginLeft: "auto", marginRight: "auto", 
+                padding: "10px", backgroundColor: "blue", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block", marginTop: "1rem" }}
                     onClick={() =>
                         Swal.fire({
                             title: 'Biztos módosítani szeretné?',

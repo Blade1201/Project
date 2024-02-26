@@ -175,13 +175,14 @@ const Reservations = () => {
                 value={type}
                 onChange={handleChangeRoomType}
                 style={{
-                    width: '200px', // Adjust width as needed
-                    margin: '0 auto', // Center the select element
+                    width: '200px',
+                    margin: '0 auto',
                     display: 'block',
                     padding: '8px',
                     border: '1px solid #ccc',
                     borderRadius: '4px',
-                    textAlign: "center"
+                    textAlign: "center",
+                    cursor:"pointer"
                 }}
             >
                 <option value="">

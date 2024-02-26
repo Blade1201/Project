@@ -56,7 +56,8 @@ const RoomsManagement = () => {
                                             <td>{value.space}</td>
                                             <td >{value.price_night} Ft/éjszaka</td>
 
-                                            <td><button style={{ float: "left" }} onClick={() => handleChangeRoomType(value.room_type_id)} >Módosítás</button></td>
+                                            <td><button style={{ marginLeft: "auto", marginRight: "auto", 
+                    padding: "10px", backgroundColor: "blue", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block", float: "left" }} onClick={() => handleChangeRoomType(value.room_type_id)} >Módosítás</button></td>
 
                                         </tr>
                                     )
@@ -88,7 +89,10 @@ const RoomsManagement = () => {
                                             <td>{value.room_number}</td>
                                             <td>{value.room_type_name}</td>
                                             <td>
-                                                <button onClick={() => handleChangeRoom(value.room_id)} >Módosítás</button>
+                                                <button
+                                                style={{ marginLeft: "auto", marginRight: "auto", 
+                                                padding: "6px", backgroundColor: "blue", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block" }}
+                                                onClick={() => handleChangeRoom(value.room_id)} >Módosítás</button>
                                             </td>
                                         </tr>
                                     )

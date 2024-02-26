@@ -27,8 +27,8 @@ const ReservationsManagement = () => {
                 </Banner>
             </Hero>
             
-                <div style={{ marginBottom: "7rem", marginTop: "4rem" }}>
-                    <table style={{ maxWidth: "100%", textAlign: "center" }}>
+                <div style={{ marginBottom: "7rem", marginTop: "4rem", display: "grid", justifyContent: "center" }}>
+                    <table style={{ width: "250%", textAlign: "center", marginRight: "25rem" }}>
                         <thead >
                             <tr>
                                 <th style={{ width: "2%" }}>ID</th>
@@ -57,7 +57,9 @@ const ReservationsManagement = () => {
 
                                         <td>
                                             <button
-                                                style={{ float: 'left' }}
+                                                style={{ marginLeft: "auto", marginRight: "auto", 
+                                                padding: "10px", backgroundColor: "red", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block",
+                                                 float: "left" }}
                                                 onClick={() => {
                                                     Swal.fire({
                                                         title: 'Biztos a törlésben?',

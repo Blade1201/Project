@@ -32,10 +32,9 @@ const UsersManagement = () => {
             </Hero>
 
                 <div style={{ marginBottom: "7rem", marginTop: "4rem" }}>
-                    <table style={{ maxWidth: '100%', textAlign:"center" }}>
-                        <thead >
+                    <table style={{ maxWidth: '100%', textAlign:"center", display: "block ruby" }}>
                             <tr>
-                                <th style={{ width: "2%" }}>ID</th>
+                                <th style={{ width: "2%", }}>ID</th>
                                 <th style={{ width: "15%" }}>Név</th>
                                 <th style={{ width: "15%" }}>E-mail-cím</th>
                                 <th style={{ width: "40%" }}> Lakcím</th>
@@ -44,13 +43,10 @@ const UsersManagement = () => {
                                 <th style={{ width: "5%" }}></th>
                                 <th style={{ width: "5%" }}></th>
                             </tr>
-                        </thead>
-
-                        <tbody>
 
                             {
                                 users.map((value, index) =>
-                                    <tr key={index} >
+                                    <tr key={index}>
                                         <td>{value.user_id}</td>
                                         <td>{value.name}</td>
                                         <td>{value.email}</td>
@@ -59,9 +55,15 @@ const UsersManagement = () => {
 
 
                                         <td>{value.is_admin ? <input type="checkbox" disabled checked /> : <input type="checkbox" disabled />}</td>
-                                        <td><button onClick={() => handleChange(value.user_id)} >Módosítás</button></td>
+                                        <td><button onClick={() => handleChange(value.user_id)} 
+                                        style={{ marginLeft: "auto", marginRight: "auto", 
+                                        padding: "10px", backgroundColor: "blue", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block" }}
+                                        > Módosítás</button></td>
+
                                         <td>
                                             <button
+                                            style={{ marginLeft: "auto", marginRight: "auto", 
+                                            padding: "10px", backgroundColor: "red", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block" }}
                                                 onClick={() => {
 
                                                     Swal.fire({
@@ -96,7 +98,6 @@ const UsersManagement = () => {
                                 )
                             }
 
-                        </tbody>
                     </table>
                 </div>
         </>

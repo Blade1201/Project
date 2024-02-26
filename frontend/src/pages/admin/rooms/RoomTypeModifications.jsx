@@ -100,12 +100,14 @@ const RoomTypeModifications = () => {
                     <hr />
                 </div>
 
-            <div style={{ textAlign: "center", marginBottom: "7rem" }} >
+            <div style={{  marginBottom: "7rem",marginTop: "3rem",width: "30%", padding: "20px", backgroundColor: "#f5f5f5",borderRadius: "10px",
+        display: "flex", flexDirection: "column", textAlign: "center", marginLeft: "auto", marginRight: "auto"}} >
+
                 <div style={{ margin: '1rem' }}>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Szobatípus megnevezése</label>
                 <input
                     style={{
-                        width: '500px',
+                        width: '350px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -122,13 +124,12 @@ const RoomTypeModifications = () => {
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Leírás</label>
                 <textarea
                     style={{
-                        width: '32%',
+                        width: '92%',
                         height: '100px',
-                        textAlign: 'justify',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
-                        resize: "none",
+                        resize: "none"
                     }}
                     type="text"
                     name="description"
@@ -142,7 +143,7 @@ const RoomTypeModifications = () => {
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Férőhely</label>
                 <input
                     style={{
-                        width: '500px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -159,7 +160,7 @@ const RoomTypeModifications = () => {
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Ár/éjszaka</label>
                 <input
                     style={{
-                        width: '500px',
+                        width: '300px',
                         padding: '0.5rem',
                         border: '1px solid #ccc',
                         borderRadius: '4px',
@@ -172,6 +173,8 @@ const RoomTypeModifications = () => {
                 </div>
 
                 <button
+                style={{ marginLeft: "auto", marginRight: "auto", 
+                padding: "10px", backgroundColor: "blue", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block", marginTop: "1rem" }}
                     onClick={() =>
                         Swal.fire({
                             title: 'Biztos módosítani szeretné?',
