@@ -70,6 +70,10 @@
     color: var(--primaryColor);
 }
 
+.user-buttons{
+    margin-left: 25rem !important;
+}
+
 @media screen and (min-width: 1510px) {
     .nav-btn {
       display: none;

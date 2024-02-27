@@ -18,7 +18,7 @@ const Room = ({ room }) => {
         </div>
 
         <Link to={`/rooms/${slug}`} className="btn-primary room-link">
-          Foglalás
+          Részletek
         </Link>
       </div>
       <p className="room-info">{name}</p>

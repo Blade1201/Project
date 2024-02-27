@@ -49,7 +49,7 @@ const Footer = () => {
                             </div>
                     </div>
                     <div className="col-md-4 col-xs-6">
-                            <h3 className="footer-title">Hopstop hotel Nyíregyháza</h3>
+                            <h3 className="footer-title">Hopstop hotel</h3>
                             <hr />
                             <img src={Debit_Card} alt="szepkartya" style={{ maxWidth: "60%", height: "auto", paddingTop: "1rem" }} />
                     </div>

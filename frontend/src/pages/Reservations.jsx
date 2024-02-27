@@ -58,7 +58,7 @@ const Reservations = () => {
                 {
                     icon: "warning",
                     title: "Sajnos nincs szabad szoba!",
-                    text: "Kérem, válasszon másik időintervallumot!",
+                    text: "Kérjük, válasszon más időintervallumot!",
                     confirmButtonText: 'Megértettem!'
                 }
             )
@@ -73,7 +73,7 @@ const Reservations = () => {
                 position: 'center',
                 icon: 'warning',
                 title: "Sikertelen foglalás!",
-                text: 'Jelentkezzen be a fiókjába!',
+                text: 'Kérjük, jelentkezzen be a fiókjába!',
                 showConfirmButton: false,
                 timer: 5000
             })

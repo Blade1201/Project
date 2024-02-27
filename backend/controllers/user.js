@@ -27,7 +27,7 @@ module.exports.userModificationByUserId = () => {
             [email, name, address, phone_number, is_admin, req.params.id],
             (err) => {
                 if (err) return res.send(err);
-                res.send("Updated...");
+                res.send("Frissítve...");
             });
 
     }

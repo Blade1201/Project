@@ -7,7 +7,7 @@ moment.locale("hu")
 
 sendMail = (email, checkInDate, checkOutDate, nightNumber, amount) => {
 
-    const message = `<h4>Tisztelt ${email}!</h4><p>Köszönjük, hogy nálunk foglalt, melyet ezen levéllel visszaigazolunk.</p><p ><b>Foglalás adatai:</b></p><ul><li><p>Érkezés: <b>${moment(checkInDate).format('LL')}</b> </p></li> <li><p>Távozás: <b>${moment(checkOutDate).format('LL')}</b> </p></li><li><p>Éjszakák száma: <b>${nightNumber}</b> </p></li><li><p>Fizetendő összeg: <b>${amount} Ft</b> </p></li></ul><br><p>Tisztelettel: <br>Hopstop Hotel csapata</p><br><hr ><p > Ha bármilyen kérdése van, keresse recepciónkat az alábbi telefonszámon: +36-30-234-6421</p>`
+    const message = `<h4>Tisztelt ${email}!</h4><p>Köszönjük, hogy nálunk foglalt, melyet ezen levéllel visszaigazolunk.</p><p ><b>Foglalás adatai:</b></p><ul><li><p>Érkezés: <b>${moment(checkInDate).format('LL')}</b> </p></li> <li><p>Távozás: <b>${moment(checkOutDate).format('LL')}</b> </p></li><li><p>Éjszakák száma: <b>${nightNumber}</b> </p></li><li><p>Fizetendő összeg: <b>${amount} Ft</b> </p></li></ul><br><p>Tisztelettel: <br>Hopstop hotel csapata</p><br><hr ><p > Ha bármilyen kérdése van, keresse recepciónkat az alábbi telefonszámon: +36-20-118-6170</p>`
 
     const transporter = nodemailer.createTransport(smtpTransport({
         service: "gmail",
@@ -32,7 +32,7 @@ sendMail = (email, checkInDate, checkOutDate, nightNumber, amount) => {
         if (error) {
             console.log(error);
         } else {
-            console.log('Email sent: ' + info.response);
+            console.log('Email elküldve: ' + info.response);
         }
     });
 }
@@ -60,7 +60,7 @@ module.exports.createBooking = () => {
         const duration = moment.duration(checkOut.diff(checkIn));
 
         if (duration.asMinutes() <= 0) {
-            res.status(400).send({ message: 'End date must be after start date' });
+            res.status(400).send({ message: 'A kijelentkezés időpontja a bejelentkezés időpontja után kell lennie' });
             return;
         }
 
@@ -73,7 +73,7 @@ module.exports.createBooking = () => {
 
             const count = results[0].count;
             if (count > 0) {
-                res.status(400).send({ message: 'Room already reserved for the selected time period' });
+                res.status(400).send({ message: 'A kiválasztott szoba nem elérhető ebben az idősávban' });
                 return;
             }
 
@@ -84,7 +84,7 @@ module.exports.createBooking = () => {
                     return;
                 }
 
-                res.status(201).send({ message: 'Reservation created' });
+                res.status(201).send({ message: 'Foglalás létrehozva' });
                 sendMail(email, checkInDate, checkOutDate, nightNumber, amount);
 
             });
@@ -105,7 +105,7 @@ module.exports.getAvailableRooms = () => {
                 return;
             }
             if (results.length === 0) {
-                return res.status(400).send({ message: "nincs szabad szoba" })
+                return res.status(400).send({ message: "Nincs szabad szoba" })
             }
 
             res.send(results)

@@ -59,10 +59,6 @@ const SingleRoom = () => {
 
         <section className="single-room">
 
-              <Link style={{marginLeft: "55.7rem", marginBottom: "1rem"}} to="/reservations" className="btn-primary">
-                  Foglalás
-              </Link>
-
           <div className="single-room-info">
             <article className="desc">
               <h3>Részletek:</h3>

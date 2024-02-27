@@ -19,7 +19,7 @@ const PrivacyPolicy = () => {
     
     <div className="privacy-policy">
         <p className="hotel-information">
-            Név: Hopstop Hotel
+            Név: Hopstop hotel
             <br></br>
             Székhely: 4400 Nyíregyháza, Böszörményi út 15.
             <br></br>
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
         </ul>
             <br />
         <p>A társaság fenntartja magának a jogot jelen Adatkezelési tájékoztató módosítására, amelyről az érintetteket megfelelő módon tájékoztatja.</p>
-        <p>2023. december. 1.</p>
+        <p>2024. január. 15.</p>
     </div>
     </>
 );

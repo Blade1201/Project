@@ -21,7 +21,7 @@ const TermsAndConditions = () => {
             <div className="terms-and-conditions">
                 <h5>1. Általános rendelkezések</h5>
 
-                <p>1.1. Az Általános Szállodai Szerződéses Feltételek (továbbiakban ÁSZF) azt a szerződéses tartalmat foglalják össze, melyek alapján a Hopstop Hotel Kft. – Hopstop Hotel **** - (4400 Nyíregyháza, Böszörményi út 15.), továbbiakban Szolgáltató) általánosságban elszállásolási szerződést köt Vendégeivel.</p>
+                <p>1.1. Az Általános Szállodai Szerződéses Feltételek (továbbiakban ÁSZF) azt a szerződéses tartalmat foglalják össze, melyek alapján a Hopstop hotel Kft. – Hopstop hotel **** - (4400 Nyíregyháza, Böszörményi út 15.), továbbiakban Szolgáltató) általánosságban elszállásolási szerződést köt Vendégeivel.</p>
 
                 <h5>2. Szerződő felek</h5>
 
@@ -68,7 +68,7 @@ const TermsAndConditions = () => {
 
                 <h5>11. Állatok behozatala</h5>
 
-                <p>11.1. A szállodába állatokat ( kistestű kutya, macska) nem tudunk fogadni.</p>
+                <p>11.1. A szállodába háziállatok ( kistestű kutya, macska) csak a meghatározott szobaszámokban tarthatóak.</p>
 
                 <h5>12. A Vendég betegsége, halála</h5>
 
