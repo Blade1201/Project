@@ -46,7 +46,7 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`booking_id`, `user_id`, `room_id`, `check_in`, `check_out`, `night_number`, `amount`) VALUES
-(4, 11, 2, '2023-07-30', '2023-07-31', 1, 2399);
+(4, 11, 2, '2024-03-12', '2024-03-16', 1, 2399);
 
 
 -- --------------------------------------------------------
