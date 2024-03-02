@@ -65,13 +65,11 @@
     }
 }
 
-
 @media screen and (max-width: 1570px){
     .accordion-body{
         margin-left: 24.3rem;
     }
 }
-
 
 @media screen and (max-width: 1400px){
     .accordion-body{
@@ -79,13 +77,11 @@
     }
 }
 
-
 @media screen and (max-width: 1250px){
     .accordion-body{
         margin-left: 19rem;
     }
 }
-
 
 @media screen and (max-width: 1100px){
     .accordion-body{
@@ -93,13 +89,11 @@
     }
 }
 
-
 @media screen and (max-width: 950px){
     .accordion-body{
         margin-left: 14.5rem;
     }
 }
-
 
 @media screen and (max-width: 830px){
     .accordion-body{
@@ -107,20 +101,17 @@
     }
 }
 
-
 @media screen and (max-width: 700px){
     .accordion-body{
         margin-left: 10.5rem;
     }
 }
 
-
 @media screen and (max-width: 570px){
     .accordion-body{
         margin-left: 8.5rem;
     }
 }
-
 
 @media screen and (max-width: 470px){
     .accordion-body{
