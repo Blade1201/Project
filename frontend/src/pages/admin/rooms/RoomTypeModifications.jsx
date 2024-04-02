@@ -9,82 +9,86 @@ import Banner from "../../../components/Banner";
 const RoomTypeModifications = () => {
 
     const [current, setCurrent] = useState({});
-    const [formData, setFormData] = useState(current[0] || {});
+    const [formData, setFormData] = useState({});
+    const [isSuccessful, setIsSuccessful] = useState(false);
     const { id } = useParams();
-
+    
     const { handleChange: handleModify } = useContext(RoomTypeContext);
-
     const navigate = useNavigate();
 
-
     const handleChange = ({ target: { value, name } }) => {
-        setFormData({ ...formData, [name]: value });
+        if (formData[name] !== value) {
+            setFormData({ ...formData, [name]: value });
+        }
     }
 
-    
     const handleSubmit = () => {
-        if (Object.entries(formData).length === 5 && !isEmpty())
-            handleModify(id, formData).then(val => {
-                if (val) {
-                    navigate("/adminpage/rooms");
-                    window.location.reload();
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'success',
-                        title: "Sikeres módosítás!",
-                        showConfirmButton: false,
-                        timer: 4000
-                    })
-                }
-
-
-                else {
-                    Swal.fire({
-                        position: 'center',
-                        icon: 'error',
-                        title: "Sikertelen módosítás!",
-                        text: "A módsoítás közben valamilyen hiba történt.",
-                        showConfirmButton: false,
-                        timer: 5000
-                    })
-                }
-
-            })
-        else {
+        const hasChanges = Object.keys(formData).some(key => formData[key] !== current[0][key]);
+        if (hasChanges) {
+            handleModify(id, formData)
+                .then(success => {
+                    if (success) {
+                        axios.get(`http://localhost:8080/room/roomtypes/${id}`)
+                            .then(({ data }) => {
+                                setFormData(data[0]);
+                                setCurrent(data);
+                                setIsSuccessful(true);
+                                Swal.fire({
+                                    position: 'center',
+                                    icon: 'success',
+                                    title: "Sikeres módosítás!",
+                                    showConfirmButton: false,
+                                    timer: 4000
+                                });
+                            })
+                            .catch(error => {
+                                console.error("Hiba az adatbeküldés során:", error);
+                            });
+                    } else {
+                        Swal.fire({
+                            position: 'center',
+                            icon: 'error',
+                            title: "Sikertelen módosítás!",
+                            text: "A módosítás közben valamilyen hiba történt.",
+                            showConfirmButton: false,
+                            timer: 5000
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error("Hiba lépett fel az adatmódosítás közben:", error);
+                });
+        } else {
             Swal.fire({
                 position: 'center',
-                icon: 'error',
-                title: "Hiba!",
-                text: 'Kérjük, az összes mezőt töltse ki!',
+                icon: 'info',
+                title: "Nincs változás!",
+                text: 'Nem történt változás a szobatípusban.',
                 showConfirmButton: false,
                 timer: 5000
-            })
+            });
         }
-
     }
-
-
-    const isEmpty = () => {
-        console.log(Object.entries(formData).filter(([key, value]) => typeof value === "string" ? value.trim().length !== 0 : value));
-        return Object.entries(formData).filter(([key, value]) => typeof value === "string" ? value.trim().length !== 0 : value).length !== 5;
-
-    }
-
 
     useEffect(() => {
         axios.get(`http://localhost:8080/room/roomtypes/${id}`)
             .then(({ data }) => {
                 setFormData(data[0]);
                 setCurrent(data)
-            }
-
-            )
+            })
             .catch(err => console.log(err));
-
     }, []);
 
 
-    
+    useEffect(() => {
+        if (isSuccessful) {
+            navigate("/adminpage/rooms");
+            window.location.reload();
+        }
+    }, [isSuccessful, navigate]);
+
+
+
     return (
         <>
             <Hero>
@@ -95,86 +99,87 @@ const RoomTypeModifications = () => {
                 </Banner>
             </Hero>
 
-                <h1 style={{ marginTop: "3rem", textAlign: "center" }}>Módosítandó szoba - <i style={{ color: "#434A42", fontSize: 25 }}> {current[0]?.["room_type_name"]} </i></h1>
-                <div style={{ textAlign: "center" }}>
-                    <hr />
-                </div>
+            <h1 style={{ marginTop: "3rem", textAlign: "center" }}>Módosítandó szoba - <i style={{ color: "#434A42", fontSize: 25 }}> {current[0]?.["room_type_name"]} </i></h1>
+            <div style={{ textAlign: "center" }}>
+                <hr />
+            </div>
 
-            <div style={{  marginBottom: "7rem",marginTop: "3rem",width: "30%", padding: "20px", backgroundColor: "#f5f5f5",borderRadius: "10px",
-        display: "flex", flexDirection: "column", textAlign: "center", marginLeft: "auto", marginRight: "auto"}} >
+            <div style={{
+                marginBottom: "7rem", marginTop: "3rem", width: "30%", padding: "20px", backgroundColor: "#f5f5f5", borderRadius: "10px",
+                display: "flex", flexDirection: "column", textAlign: "center", marginLeft: "auto", marginRight: "auto"
+            }} >
 
                 <div>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Szobatípus megnevezése</label>
-                <input
-                    style={{
-                        width: '250px',
-                        padding: '0.5rem',
-                        border: '1px solid #ccc',
-                        borderRadius: '4px',
-                    }}
-                    type="text"
-                    name="room_type_name"
-                    onChange={(e) => handleChange(e)}
-                    value={formData?.room_type_name || ""}
+                    <input
+                        style={{
+                            width: '250px',
+                            padding: '0.5rem',
+                            border: '1px solid #ccc',
+                            borderRadius: '4px',
+                        }}
+                        type="text"
+                        name="room_type_name"
+                        onChange={(e) => handleChange(e)}
+                        value={formData?.room_type_name || ""}
                     />
                 </div>
-
 
                 <div>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Leírás</label>
-                <textarea
-                    style={{
-                        width: '92%',
-                        height: '100px',
-                        padding: '0.5rem',
-                        border: '1px solid #ccc',
-                        borderRadius: '4px',
-                        resize: "none"
-                    }}
-                    type="text"
-                    name="description"
-                    onChange={(e) => handleChange(e)}
-                    value={formData?.description || ""}
+                    <textarea
+                        style={{
+                            width: '92%',
+                            height: '100px',
+                            padding: '0.5rem',
+                            border: '1px solid #ccc',
+                            borderRadius: '4px',
+                            resize: "none"
+                        }}
+                        type="text"
+                        name="description"
+                        onChange={(e) => handleChange(e)}
+                        value={formData?.description || ""}
                     />
                 </div>
-
 
                 <div>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Férőhely</label>
-                <input
-                    style={{
-                        width: '250px',
-                        padding: '0.5rem',
-                        border: '1px solid #ccc',
-                        borderRadius: '4px',
-                    }}
-                    type="number"
-                    name="space"
-                    onChange={(e) => handleChange(e)}
-                    value={formData?.space || ""}
+                    <input
+                        style={{
+                            width: '250px',
+                            padding: '0.5rem',
+                            border: '1px solid #ccc',
+                            borderRadius: '4px',
+                        }}
+                        type="number"
+                        name="space"
+                        onChange={(e) => handleChange(e)}
+                        value={formData?.space || ""}
                     />
                 </div>
 
-
                 <div>
                     <label style={{ display: 'block', marginBottom: '0.5rem' }}>Ár/éjszaka</label>
-                <input
-                    style={{
-                        width: '250px',
-                        padding: '0.5rem',
-                        border: '1px solid #ccc',
-                        borderRadius: '4px',
-                    }}
-                    type="number"
-                    name="price_night"
-                    onChange={(e) => handleChange(e)}
-                    value={formData?.price_night || ""}
+                    <input
+                        style={{
+                            width: '250px',
+                            padding: '0.5rem',
+                            border: '1px solid #ccc',
+                            borderRadius: '4px',
+                        }}
+                        type="number"
+                        name="price_night"
+                        onChange={(e) => handleChange(e)}
+                        value={formData?.price_night || ""}
                     />
                 </div>
 
                 <button
-                style={{ marginLeft: "auto", marginRight: "auto", 
-                padding: "10px", backgroundColor: "green", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block", marginTop: "1rem" }}
+                    style={{
+                        marginLeft: "auto", marginRight: "auto",
+                        padding: "10px", backgroundColor: "green", color: "white", border: "medium", borderRadius: "4px", cursor: "pointer", display: "block", marginTop: "1rem"
+                    }}
                     onClick={() =>
                         Swal.fire({
                             title: 'Biztos módosítani szeretné?',
@@ -187,19 +192,12 @@ const RoomTypeModifications = () => {
                             confirmButtonText: 'Igen, módosítás!'
                         }).then((result) => {
                             if (result.isConfirmed) {
-                                handleSubmit()
-                                Swal.fire(
-                                    {
-                                        title: "Sikeresen módosította a szobatípust!",
-                                        icon: "success",
-                                        timer: 3000
-                                    }
-                                )
+                                handleSubmit();
                             }
                         })
                     }>Módosítás</button>
             </div>
-            </>
+        </>
     )
 }
 

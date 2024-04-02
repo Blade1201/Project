@@ -1,7 +1,7 @@
 {
   "name": "hopstop",
   "version": "0.1.0",
-  "author": "Molnár Áron (Blade1201) && Pelles Martin (Pepevokoszcs)",
+  "author": "Molnár Áron (Blade1201)",
   "license": "ISC",
   "private": true,
   "dependencies": {

@@ -25,7 +25,7 @@ const Reservations = () => {
     const [type, setType] = useState('');
     const [show, setShow] = useState(false);
 
-    const nightNumber = Math.round((Date.parse(checkOutDate) - Date.parse(checkInDate)) / 86400000)
+    const nightNumber = Math.ceil((Date.parse(checkOutDate) - Date.parse(checkInDate)) / (1000 * 60 * 60 * 24));
 
     
     const handleCheckInDateChange = (newValue) => {
@@ -34,9 +34,11 @@ const Reservations = () => {
       };
       
 
-      const handleCheckOutDateChange = (newValue) => {
+    const handleCheckOutDateChange = (newValue) => {
+      if (newValue.isAfter(checkInDate)) {
         setCheckOutDate(newValue);
-      };
+      }
+    };
 
 
     const handleChangeRoomType = (event) => {

@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+import axios from 'axios';
 import "./styles/main.css";
 import {Routes, Route} from "react-router-dom";
 import Home from "./pages/Home";
@@ -22,7 +23,6 @@ import RoomsManagement from "./pages/admin/rooms/RoomsManagement";
 import RoomsModifications from "./pages/admin/rooms/RoomsModifications";
 import RoomTypeModifications from "./pages/admin/rooms/RoomTypeModifications";
 import Login from "./pages/Login";
-import axios from 'axios';
 import { AuthContext } from "./context/AuthContext";
 import { RoomTypeContext } from './context/RoomTypeContext';
 import { RoomContext } from "./context/RoomContext";

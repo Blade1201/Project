@@ -10,7 +10,7 @@ import Detail_5 from "../images/details/detail-5.png";
 import Detail_6 from "../images/details/detail-6.png";
 import Detail_7 from "../images/details/detail-7.png";
 
-const Galery = () => {
+const Gallery = () => {
 
     const responsive = {
         superLargeDesktop: {
@@ -55,4 +55,4 @@ const Galery = () => {
     )
 }
 
-export default Galery;
+export default Gallery;

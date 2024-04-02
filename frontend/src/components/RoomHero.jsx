@@ -21,4 +21,4 @@ const RoomHero = ({ children, item }) => {
     );
   };
   
-  export default RoomHero;
+export default RoomHero;

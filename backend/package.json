@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "author": "Molnár Áron (Blade1201) && Pelles Martin (Pepevokoszcs)",
+  "author": "Pelles Martin (Pepevokoszcs)",
   "license": "ISC",
   "description": "",
   "main": "app.js",

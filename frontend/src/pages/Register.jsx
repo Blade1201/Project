@@ -11,8 +11,8 @@ const Register = () => {
   const [formData, setFormData] = useState({});
   const [show, setShow] = useState(false);
 
-  const nameformat = /^[A-ZÍÁÉŰÚŐÓ][a-zíéáűúőó]*[ ]{1}[A-ZÍÁÉŰÚŐÓ][a-zíéáűúőó\D]*$/;
-  const addressformat = /^([0-9]{4}[ ]{1}[A-ZÍÁÉŰÚŐÓ][a-zíéáűúőó]*[,]{1}[ ]{1}[A-ZÍÁÉŰÚŐÓ][a-zíéáűúőó]*[ ]{1}[\wa-zíéáűúőó]*[ ]{1}[\w][a-z íéáűúőó\./\-0-9]*)$/;
+  const nameformat = /^[A-ZÍÁÉŰÚÜŐÓÖ][a-zíéáűúüőóö]*[ ]{1}[A-ZÍÁÉŰÚÜŐÓÖ][a-zíéáűúüőóö\D]*$/;
+  const addressformat = /^([0-9]{4}[ ]{1}[A-ZÍÁÉŰÚÜŐÓÖ][a-zíéáűúüőóö]*[,]{1}[ ]{1}[A-ZÍÁÉŰÚÜŐÓÖ][a-zíéáűúőóö]*[ ]{1}[\wa-zíéáűúüőóö\.]*[ ]{1}[\w][a-z íéáűúüőóö\./\-0-9]*)$/;
   const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   const navigate = useNavigate();
